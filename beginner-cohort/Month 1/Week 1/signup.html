@@ -10,39 +10,109 @@
 <body>
     
     <h3>Sign up Form</h3>
-     <button> <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ZUMyUgWZ--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://dev-to-uploads.s3.amazonaws.com/i/am6lv2x37bole6x4poz3.jpg" height="25px" alt="Google Logo"> <b> Sign up with Google</b></button>
+    <button> 
+        <!-- <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ZUMyUgWZ--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://dev-to-uploads.s3.amazonaws.com/i/am6lv2x37bole6x4poz3.jpg" 
+            height="25px" 
+            alt="Google Logo"> -->
+        <b>Sign up with Google</b>
+    </button>
             <br>
             <br>
             <hr>
     <form action="">
         <div> 
-            <label for="Name"><b>Name:</b></label>
+            <label
+                id="name-label" 
+                for="Name"
+            >
+                    <b>Name:</b>
+            </label>
+                <br>
+            <input 
+                type="text" 
+                name="name"
+                placeholder="Type your Name" 
+                id="name"
+                required
+            >
         </div>
-        <input type="text" placeholder="Type your Name" required>
-        <br>
-        <br>
-         <div>
-        <label for="Email"><b>Email:</b></label>
-         </div>
-        <input type="email" placeholder="example@mail.com" required>
-        <br>
         <br>
         <div>
-            <label for="Password"><b>Password:</b></label>
+            <label
+                id="email-label"
+                for="email"
+            >
+                    <b>Email:</b>
+            </label>
+                <br>
+            <input 
+                type="email" 
+                name="email"
+                placeholder="example@mail.com"
+                id="email" 
+                required
+            >
         </div>
-        <input type="password" name="password" required placeholder="at least 8 characters">
         <br>
+        <div>
+            <label
+                id="password-label"
+                for="Password"
+            >
+                    <b>Password:</b>
+            </label>
+                <br>
+            <input 
+                type="password" 
+                name="password"
+                placeholder="at least 8 characters"
+                id="password"
+                required
+            >
+        </div>
         <br>
         <hr>
-        <input type="checkbox" required> I agree with <a href="https://policies.google.com/terms?hl=en-US" target="_blank"><b>Terms</b></a> and <a href="https://policies.google.com/privacy" target="_blank"><b>Privacy</b></a> 
+        <div>
+            <input 
+                type="checkbox" 
+                required
+            >
+                I agree with
+                    <a 
+                        href="https://policies.google.com/terms?hl=en-US" 
+                        target="_blank"
+                    >
+                        <b>Terms</b>
+                    </a> 
+                        and 
+                    <a 
+                        href="https://policies.google.com/privacy" 
+                        target="_blank"
+                    >
+                        <b>Privacy</b>
+                    </a>
+                </div>
         <!-- Given links to both Terms and Privacy for a touch. -->
         <br>
-        <br>
-        <button>  &nbsp;  &nbsp;  &nbsp;  &nbsp;Sign Up  &nbsp;  &nbsp; &nbsp;  &nbsp;</button>
+        <div>
+            <button>
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                    Sign Up  
+                &nbsp;  &nbsp; &nbsp; &nbsp;
+            </button>
+        </div>
         <hr>
-        <p>  &nbsp;  &nbsp;  &nbsp;  &nbsp;
-        <b>Already have an account?</b></p>
-       &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <button><a href="login.html">Log in</a></button>
+        <p>
+            &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                <b>Already have an account?</b>
+        </p>
+       &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+       <button>
+            <a 
+                href="login.html"
+                >Log in
+            </a>
+        </button>
        <!-- Both the login and sign up form are conneceted. -->
     </form>
 

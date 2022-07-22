@@ -9,37 +9,88 @@
 </head>
 <body>
     
-        <h3>Log in Form</h3>
-        <button> <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ZUMyUgWZ--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://dev-to-uploads.s3.amazonaws.com/i/am6lv2x37bole6x4poz3.jpg" height="30px
-            " alt="Google Logo"> <b> Log in with Google</b></button>
+    <h3>Log in Form</h3>
+        <button>
+            <!-- <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ZUMyUgWZ--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://dev-to-uploads.s3.amazonaws.com/i/am6lv2x37bole6x4poz3.jpg"
+            height="30px"
+            alt="Google Logo"> -->
+            <b>Log in with Google</b>
+        </button>
             <br>
             <br>
-        <hr>
+            <hr>
     <form action="">
         <div>
-             <label for="Email"> <b>Email:</b></label>
+            <label 
+                id="email-label" 
+                for="email"
+            >
+                    <b>Email:</b>
+            </label>
+                <br>
+            <input 
+                type="email"
+                name="email"  
+                placeholder="example@mail.com" 
+                id="email"
+                required
+            >
         </div>
-        <input type="email" placeholder="example@mail.com" required>
-        <br>
         <br>
         <div> 
-             <label for="Password"><b>Password:</b></label>
+            <label 
+                id="password-label" 
+                for="Password">
+                    <b>Password:</b>
+            </label>
+            <br>
+            <input 
+                type="password" 
+                name="password" 
+                placeholder="at least 8 characters"
+                id="password"
+                required
+            >
         </div>
-            <input type="password" name="password" required placeholder="at least 8 characters">
         <br>
+        <div>
+            <input 
+                type="checkbox" 
+                required
+                > 
+            <label 
+                id="remember-me-label" 
+                for="checkbox">
+                    Remember Me 
+            </label>
+        </div>
         <br>
-        <input type="checkbox" required> Remember Me
+        <div>
+            <button>
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                    Log in
+                &nbsp;  &nbsp; &nbsp;  &nbsp;
+            </button>
+        </div>
         <br>
-        <br>
-        <button>  &nbsp;  &nbsp;  &nbsp;  &nbsp;Log in  &nbsp;  &nbsp; &nbsp;  &nbsp;</button>
-        <br>
-        <br>
-        <a href="https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DDesktop" target="_blank">Forgot Password?</a>
+        <a 
+            href="https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DDesktop" 
+            target="_blank"
+        >Forgot Password?
+        </a>
         <!-- Added a link to Forgot Password for a touch -->
         <hr>
-        <p>  &nbsp;  &nbsp;  &nbsp;  &nbsp;
-        <b>Don't have an account?</b></p>
-        &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <button> <a href="signup.html">Sign up</a></button>
+        <p>
+            &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                <b>Don't have an account?</b>
+        </p>
+        &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <button>
+            <a 
+                href="signup.html"
+                >Sign up
+            </a>
+        </button>
         <!-- Both the login and sign up form are conneceted. -->
     </form>
 
