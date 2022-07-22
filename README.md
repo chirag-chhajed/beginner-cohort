@@ -7,5 +7,5 @@ In simple words we are a community or one of the best community. We start on a s
 ## Month 1
 ### Week 1
 This was HTML week. We were given the task of making Signup/Login Form with just HTML.
-1. ![](https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/chhaj/Desktop/Crework%20Beginner%20Cohort/beginner-cohort/beginner-cohort/Month%201/Week%201/Images/login.html.png?version%3D1658505636100)
-2. ![](https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/chhaj/Desktop/Crework%20Beginner%20Cohort/beginner-cohort/beginner-cohort/Month%201/Week%201/Images/signup.html.png?version%3D1658505682839)
+1. ![Login Form](./beginner-cohort/Month%201/Week%201/Images/login.html.png)
+2. ![Signup Form](./beginner-cohort/Month%201/Week%201/Images/signup.html.png)
