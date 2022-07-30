@@ -3,13 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
-   
+
 }
+
 body {
     display: grid;
     place-items: center;
     background-color: #02024f
 }
+
 .divider {
     height: 3px;
     width: 60vw;
@@ -17,11 +19,13 @@ body {
     clear: right;
     margin-top: 3vh;
 }
+
 header {
     height: 20vh;
     width: 80vw;
     text-align: center;
 }
+
 header h1 {
     font-family: Raleway, sans-serif;
     word-spacing: 10px;
@@ -29,6 +33,7 @@ header h1 {
     margin-top: 5vh;
     color: white;
 }
+
 #google {
     margin-bottom: 3vh;
     position: absolute;
@@ -38,6 +43,7 @@ header h1 {
     height: 4vh;
     width: 60vw;
 }
+
 main {
     height: 70vh;
     width: 60vw;
@@ -63,7 +69,7 @@ input {
     height: 4vh;
 }
 
-#checkbox-label{
+#checkbox-label {
     display: block;
 }
 
@@ -74,7 +80,7 @@ input {
     top: 1vh;
 }
 
-#signupB{
+#signupB {
     width: 40vw;
     height: 4vh;
     position: absolute;
@@ -82,7 +88,7 @@ input {
     transform: translateX(-50%);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -90,7 +96,7 @@ a{
     height: 3px;
     width: 40vw;
     margin-left: 10vw;
-    background-color: black;
+    background-color: transparent;
     clear: right;
     margin-top: 3vh;
 }
@@ -101,7 +107,7 @@ p {
     margin-top: 4vh;
 }
 
-#loginB{
+#loginB {
     width: 40vw;
     height: 4vh;
     position: absolute;
@@ -120,15 +126,16 @@ input:hover {
     background-color: darkgray;
     color: black;
 }
+
 .loader {
     position: absolute;
     top: 10%;
     left: 5%;
-  }
-  
-  .outer,
-  .middle,
-  .inner {
+}
+
+.outer,
+.middle,
+.inner {
     border: 3px solid transparent;
     border-top-color: #3cefff;
     border-right-color: #3cefff;
@@ -136,39 +143,40 @@ input:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-  }
-  
-  .outer {
+}
+
+.outer {
     width: 3.5em;
     height: 3.5em;
     margin-left: -1.75em;
     margin-top: -1.75em;
     animation: spin 2s linear infinite;
-  }
-  
-  .middle {
+}
+
+.middle {
     width: 2.1em;
     height: 2.1em;
     margin-left: -1.05em;
     margin-top: -1.05em;
     animation: spin 1.75s linear reverse infinite;
-  }
-  
-  .inner {
+}
+
+.inner {
     width: 0.8em;
     height: 0.8em;
     margin-left: -0.4em;
     margin-top: -0.4em;
     animation: spin 1.5s linear infinite;
-  }
-  
-  @keyframes spin {
+}
+
+@keyframes spin {
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
- 
-  @media screen and (max-width: 520px){
+}
+
+@media screen and (max-width: 520px) {
+
     label,
     input {
         margin-left: 5vw;
@@ -184,8 +192,9 @@ input:hover {
         margin-left: 5vw;
         display: inline;
     }
-  }
-  @media screen and (max-width: 450px) {
+}
+
+@media screen and (max-width: 450px) {
     header {
         height: 30vh;
     }
