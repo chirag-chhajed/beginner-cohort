@@ -1,122 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
     <title>Sign Up Form</title>
-</head>
-<body>
-    
-    
-    <h3>Sign up Form</h3>
-    <button> 
-         <img src="http://assets.stickpng.com/images/5847f9cbcef1014c0b5e48c8.png"
-            height="25px"
-            alt="Google Logo">
-        <b>Sign up with Google</b>
-    </button>
-            <br>
-            <hr>
-    <form action="" id="signup-form">
-        <div> 
-            <label
-                id="name-label" 
-                for="Name"
-            >
-                    <b>Name:</b>
-            </label>
-                <br>
-            <input 
-                type="text" 
-                name="name"
-                placeholder="Type your Name" 
-                id="name"
-                required
-            >
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="outer"></div>
+      <div class="middle"></div>
+      <div class="inner"></div>
+    </div>
+
+    <header>
+      <h1>Sign up Form</h1>
+      <button id="google">
+        <a href="#">
+          <i class="fab fa-google"></i>
+          <strong>Sign up with Google</strong>
+        </a>
+      </button>
+    </header>
+    <div class="divider"></div>
+    <main>
+      <form action="" id="signup-form">
+        <div class="form-section">
+          <label id="name-label" for="Name">
+            <strong>Name:</strong>
+          </label>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Type your Name"
+            id="name"
+            required
+          />
         </div>
-        <br>
-        <div>
-            <label
-                id="email-label"
-                for="email"
-            >
-                    <b>Email:</b>
-            </label>
-                <br>
-            <input 
-                type="email" 
-                name="email"
-                placeholder="example@mail.com"
-                id="email" 
-                required
-            >
+
+        <div class="form-section">
+          <label id="email-label" for="email">
+            <strong>Email:</strong>
+          </label>
+
+          <input
+            type="email"
+            name="email"
+            placeholder="example@mail.com"
+            id="email"
+            required
+          />
         </div>
-        <br>
-        <div>
-            <label
-                id="password-label"
-                for="Password"
-            >
-                    <b>Password:</b>
-            </label>
-                <br>
-            <input 
-                type="password" 
-                name="password"
-                placeholder="at least 8 characters"
-                id="password"
-                minlength="8"
-                required
-            >
+
+        <div class="form-section">
+          <label id="password-label" for="Password">
+            <strong>Password:</strong>
+          </label>
+
+          <input
+            type="password"
+            name="password"
+            placeholder="min 8 characters"
+            id="password"
+            pattern="[a-z0-5]{8,}"
+            required
+          />
         </div>
-        <br>
-        <hr>
-        <div>
-            <input 
-                type="checkbox" 
-                required
-            >
-                I agree with
-                    <a 
-                        href="https://policies.google.com/terms?hl=en-US" 
-                        target="_blank"
-                    >
-                        <b>Terms</b>
-                    </a> 
-                        and 
-                    <a 
-                        href="https://policies.google.com/privacy" 
-                        target="_blank"
-                    >
-                        <b>Privacy</b>
-                    </a>
-                </div>
-        <!-- Given links to both Terms and Privacy for a touch. -->
-        <br>
-        <div>
-            <button>
-                &nbsp;  &nbsp;  &nbsp;  &nbsp;
-                    Sign Up  
-                &nbsp;  &nbsp; &nbsp; &nbsp;
-            </button>
-        </div>
-        <hr>
-        <p>
-            &nbsp;  &nbsp;  &nbsp;  &nbsp;
-                <b>Already have an account?</b>
-        </p>
-       &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
-       <button>
-            <a 
-                href="login.html"
-                >Log in
+
+        <div class="form-section">
+          <label for="checkbox" id="checkbox-label">
+            <input type="checkbox" id="checkbox" required />
+            I agree with
+            <a href="#">
+              <strong>Terms</strong>
             </a>
+            and
+            <a href="#">
+              <strong>Privacy</strong>
+            </a>
+          </label>
+        </div>
+        <!-- Given links to both Terms and Privacy for a touch. -->
+
+        <div>
+          <button id="signupB">
+            <a href="#">
+              <strong>Sign up</strong>
+            </a>
+          </button>
+        </div>
+        <div class="divider-two"></div>
+        <p>
+          <strong>Already have an account?</strong>
+        </p>
+
+        <button id="loginB">
+          <a href="login.html"> <strong>Log in</strong> </a>
         </button>
-       <!-- Both the login and sign up form are conneceted. -->
-    </form>
-
-
-</body>
+        <!-- Both the login and sign up form are conneceted. -->
+      </form>
+    </main>
+  </body>
+</html>
