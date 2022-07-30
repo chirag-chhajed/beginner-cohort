@@ -9,5 +9,5 @@ In simple words we are a community or one of the best community. We start on a s
 I feel fortunate to have been given the chance to be a part of this cohort because it is the first for Crework. This Github project incorporates every learning from the cohort. The Cohort is currently ongoing.
 
 ## Month 1
-### Week 1 : [WEEK1](./beginner-cohort/Month%201/Week%201/)
-### Week 2 : [WEEK2](./beginner-cohort/Month%201/Week%202/)
+### [WEEK1](./beginner-cohort/Month%201/Week%201/)
+### [WEEK2](./beginner-cohort/Month%201/Week%202/)
