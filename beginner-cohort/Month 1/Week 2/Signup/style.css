@@ -167,4 +167,38 @@ input:hover {
       transform: rotate(360deg);
     }
   }
-  
+ 
+  @media screen and (max-width: 520px){
+    label,
+    input {
+        margin-left: 5vw;
+    }
+
+    #signupB,
+    #loginB {
+        left: 45%;
+    }
+
+    p {
+        text-align: center;
+        margin-left: 5vw;
+        display: inline;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    header {
+        height: 30vh;
+    }
+
+    #google {
+        top: 30%
+    }
+
+    #loginB {
+        transform: translate(-50%, 10vh);
+    }
+
+    p {
+        font-size: 2vh;
+    }
+}
