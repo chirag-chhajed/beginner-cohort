@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login Form</title>
+  </head>
+
+  <body>
+    <div class="balls">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+    <header>
+      <h1>Login Form</h1>
+      <button id="google">
+        <a href="#">
+          <i class="fab fa-google"></i>
+          <strong>Log in with Google</strong>
+        </a>
+      </button>
+    </header>
+    <div class="divider"></div>
+    <main>
+      <form action="" id="login-form">
+        <div class="form-section">
+          <label id="email-label" for="email">
+            <strong>Email:</strong>
+          </label>
+
+          <input
+            type="email"
+            name="email"
+            placeholder="example@mail.com"
+            id="email"
+            required
+          />
+        </div>
+
+        <div class="form-section">
+          <label id="password-label" for="Password">
+            <strong>Password:</strong>
+          </label>
+
+          <input
+            type="password"
+            name="password"
+            id="password"
+            pattern="[a-z0-5]{8,}"
+            required
+          />
+        </div>
+
+        <div class="form-section" id="cb">
+            <label id="remember-me-label" for="checkbox"> 
+          <input type="checkbox" id="checkbox" required />
+        <strong>Remember Me</strong>  </label>
+        </div>
+
+        <div>
+          <button id="loginB">
+            <a href="#"></a>
+            <strong>Log in</strong>
+          </button>
+        </div>
+
+        <a href="#" 
+            target="_blank" 
+            rel="noreferrer"
+            id="fp"
+            >Forgot Password? </a>
+
+       <div class="divider two"></div>
+       
+        <p>
+          <strong>Don't have an account?</strong>
+        </p>
+
+        <button id="signupB">
+          <a href="signup.html">Sign up </a>
+        </button>
+    
+        <!-- Both the login and sign up form are conneceted. -->
+      </form>
+    </main>
+  </body>
+</html>
