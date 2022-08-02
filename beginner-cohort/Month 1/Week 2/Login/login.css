@@ -23,32 +23,33 @@ body {
 header {
     height: 20vh;
     width: 80vw;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
 }
 
 header h1 {
     font-family: Raleway, sans-serif;
     word-spacing: 10px;
     font-size: 8vh;
-    margin-top: 5vh;
+    margin-top: 5%;
     color: white;
 }
 
 #google {
     margin-bottom: 3vh;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 4vh;
+    padding: 1vh;
     width: 60vw;
+    transition: background-color 400ms;
 }
 
 main {
     height: 70vh;
     width: 60vw;
     background-color: wheat;
-
 }
 
 .form-section {
@@ -67,10 +68,14 @@ input {
     margin-left: 10vw;
     width: 40vw;
     height: 4vh;
+    padding-left: 10px;
+    outline: none;
 }
 
-#checkbox-label {
+
+#remember-me-label {
     display: block;
+
 }
 
 #checkbox {
@@ -80,25 +85,37 @@ input {
     top: 1vh;
 }
 
-#signupB {
+#loginB {
     width: 40vw;
     height: 4vh;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    transition: background-color 400ms;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
-.divider-two {
-    height: 3px;
+#fp {
+    font-size: 3vh;
+    text-align: center;
+    display: block;
+    margin-top: 10vh;
+
+    transition: transform 400ms;
+}
+
+#fp:hover {
+    color: navy;
+    transform: scale(1.5);
+}
+
+.two {
     width: 40vw;
     margin-left: 10vw;
-    background-color: transparent;
-    clear: right;
-    margin-top: 3vh;
 }
 
 p {
@@ -107,13 +124,14 @@ p {
     margin-top: 4vh;
 }
 
-#loginB {
+#signupB {
     width: 40vw;
     height: 4vh;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 4vh;
+    transition: background-color 400ms;
 }
 
 button:hover {
@@ -127,51 +145,41 @@ input:hover {
     color: black;
 }
 
-.loader {
+.balls {
+    width: 3.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 5%;
 }
 
-.outer,
-.middle,
-.inner {
-    border: 3px solid transparent;
-    border-top-color: #3cefff;
-    border-right-color: #3cefff;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-.outer {
-    width: 3.5em;
-    height: 3.5em;
-    margin-left: -1.75em;
-    margin-top: -1.75em;
-    animation: spin 2s linear infinite;
-}
-
-.middle {
-    width: 2.1em;
-    height: 2.1em;
-    margin-left: -1.05em;
-    margin-top: -1.05em;
-    animation: spin 1.75s linear reverse infinite;
-}
-
-.inner {
+.balls div {
     width: 0.8em;
     height: 0.8em;
-    margin-left: -0.4em;
-    margin-top: -0.4em;
-    animation: spin 1.5s linear infinite;
+    border-radius: 50%;
+    background-color: #fc2f70;
+    transform: translateY(-100%);
+    animation: wave 0.8s ease-in-out alternate infinite;
 }
 
-@keyframes spin {
+.balls div:nth-of-type(1) {
+    animation-delay: -0.4s;
+}
+
+.balls div:nth-of-type(2) {
+    animation-delay: -0.2s;
+}
+
+@keyframes wave {
+    from {
+        transform: translateY(-100%);
+    }
+
     to {
-        transform: rotate(360deg);
+        transform: translateY(100%);
     }
 }
 
@@ -192,6 +200,16 @@ input:hover {
         margin-left: 5vw;
         display: inline;
     }
+
+    #fp {
+        text-align: left;
+        margin-left: 5vw;
+    }
+
+    .two {
+        margin-left: 5vw;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -203,7 +221,7 @@ input:hover {
         top: 30%
     }
 
-    #loginB {
+    #signupB {
         transform: translate(-50%, 10vh);
     }
 
