@@ -1,0 +1,271 @@
+:root {
+    /* Colors */
+    --white: #ffffff;
+    --yellowshade-1: #ffac2f;
+    --yellowshade-2: #f88912;
+    --grey-shade: #8f8f8f;
+    --dull-bg-1: #463f3a;
+    --background-color: #111;
+    --foot-color: #5151513d;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Poppins, sans-serif;
+    overflow-x: hidden;
+
+}
+
+header {
+    min-height: 15vh;
+    grid-template-columns: 2fr 1fr;
+    min-width: 100vw;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display: inline;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+ul {
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+    list-style: none;
+    text-align: center;
+    justify-items: flex-end;
+
+}
+
+ul li>a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+}
+
+main section {
+    padding: 0 2rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main section>h1 {
+    color: var(--white);
+    font-weight: 700;
+    text-align: left;
+    font-size: 2rem;
+}
+
+main section>h1~h3 {
+    color: var(--grey-shade);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+main section>h1~a {
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    margin: 0 auto;
+    border-radius: 2rem;
+    text-decoration: none;
+
+}
+
+.two {
+    padding-top: 1rem;
+}
+
+.two h3 {
+    color: var(--yellowshade-2);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.two .images {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+figure {
+    border: 2px solid var(--dull-bg-1);
+    border-radius: 1em;
+    padding: 0.5rem;
+}
+
+figcaption {
+    text-align: center;
+    background-color: var(--dull-bg-1);
+    transition: background-color 300ms linear;
+}
+
+figcaption a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 300ms ease-out;
+}
+
+figcaption:active {
+    background-color: var(--white);
+}
+
+figcaption a:active {
+    color: navy;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--foot-color);
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "foot social"
+        "link link"
+        "copys copys";
+}
+
+.footer {
+    grid-area: foot;
+}
+
+.social-icons {
+    grid-area: social;
+    place-self: end;
+    align-self: center;
+    gap: 0.5rem;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+.links {
+    grid-area: link;
+}
+
+.links ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.copy {
+    grid-area: copys;
+    text-align: center;
+    color: var(--grey-shade);
+    border-top: solid 1px black;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        min-height: 20vh;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    ul {
+        flex-direction: row;
+        gap: 1.5rem;
+        font-size: 1.5rem;
+        align-items: flex-start;
+    }
+
+    main section {
+        gap: 3.5rem;
+    }
+
+    main section>h1 {
+        text-align: center;
+        font-size: 4.5rem;
+        font-weight: 800;
+    }
+
+    main section>h1~h3 {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    main section>h1~a {
+        font-size: 2rem;
+        border-radius: 2.5rem;
+    }
+
+    .two {
+        margin-top: 4rem;
+    }
+
+    .two h3 {
+        font-size: 2.5rem;
+    }
+
+    .two .images {
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 4rem;
+    }
+
+    .two .images>figure {
+        padding: 1rem;
+    }
+
+    .links ul {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .copy {
+        padding-top: 1.5rem;
+        font-size: 1rem;
+        font-weight: 400;
+        border-top: solid 1px black;
+    }
+
+    i {
+        transition: transform 400ms, color 200ms;
+    }
+
+    i:hover {
+        transform: scale(1.5);
+        color: navajowhite;
+    }
+
+    figure {
+        transition: transform 200ms ease-in-out;
+    }
+
+    figure:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    img {
+        height: 12.5rem;
+        width: 25rem;
+        object-fit: contain;
+    }
+
+    .images {
+        justify-content: space-evenly;
+    }
+
+    header {
+        padding: 2rem 3rem;
+    }
+
+    ul {
+        justify-content: flex-end;
+    }
+
+    footer {
+        padding: 1rem 3rem;
+    }
+}

@@ -1,0 +1,499 @@
+:root {
+    /* Colors */
+    --white: #ffffff;
+    --yellowshade-1: #ffac2f;
+    --yellowshade-2: #f88912;
+    --yellowshade-3: #e09f3e;
+    --grey-shade: #8f8f8f;
+    --dull-bg-1: #463f3a;
+    --background-color: #111;
+    --foot-color: #5151513d;
+    /* background: linear-gradient(90deg,var(--fire-gradient-start),var(--fire-gradient-end)); */
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Poppins, sans-serif;
+    overflow-x: hidden;
+    color: var(--white);
+
+}
+
+header {
+    min-height: 10vh;
+    padding: 1rem 2rem;
+    min-width: 100vw;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.one {
+    padding: 0 1.5em;
+}
+
+.one div>h1 {
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+h1 span {
+
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    ;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 2em;
+    gap: 0.5rem;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 1em 4em;
+    border-radius: 0.5em;
+}
+
+.buttons a:nth-child(1) {
+    color: #111;
+    background-color: var(--white);
+}
+
+.buttons a:nth-child(2) {
+    color: var(--white);
+    background-color: #111;
+    border: 1px solid var(--white);
+
+}
+
+.card1 {
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    border: solid 1px white;
+    overflow-x: scroll;
+    width: 355px;
+}
+
+.card1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+
+.card1 div>h3 {
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.card1 div>.description {
+    font-size: 0.9rem;
+    color: var(--grey-shade);
+}
+
+.card1 div>img {
+    width: 5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f2f2f2;
+}
+
+.two {
+    padding: 0 1.5rem;
+    margin-top: 4rem;
+}
+
+.two h2 {
+    font-size: 1.5rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.two h2>span {
+    color: var(--yellowshade-1);
+}
+
+.two div {
+
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.two div div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: var(--foot-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.two div>img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.two div>h3 {
+    color: var(--yellowshade-2);
+}
+
+.three {
+    padding: 0 1.5rem;
+    margin-top: 4rem;
+}
+
+.three h2 {
+    text-align: center;
+    font-weight: 500;
+    color: var(--yellowshade-1);
+}
+
+.three h4 {
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.card2 {
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    border: solid 1px white;
+    overflow-x: scroll;
+    margin-top: 2rem;
+}
+
+.week {
+    text-align: center;
+    color: var(--yellowshade-1);
+    font-weight: 700;
+}
+
+.week~div>ul {
+    background-color: var(--dull-bg-1);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.flashcard {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.flashcard div {
+    background-color: var(--yellowshade-3);
+    color: #111;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.four {
+    margin-top: 4rem;
+    padding: 0 1.5rem;
+
+}
+
+.four h2 {
+    color: var(--yellowshade-1);
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.four div {
+
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.four div div>img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.four div div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: var(--foot-color);
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+
+.five {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.five h2 {
+    color: var(--yellowshade-1);
+    margin-bottom: 2rem;
+}
+
+.five div>img {
+    height: 10rem;
+    width: 14rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1rem;
+}
+
+.five div {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.five div div>h2 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.five div div>h3 {
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.six {
+    flex-direction: column;
+    background: linear-gradient(90deg, #f3ec78, #af4261);
+    margin-top: 4rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.six h2 {
+    font-size: 2.5rem;
+}
+
+.six>a {
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    color: #111;
+    background-color: var(--white);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.seven {
+    margin-top: 4rem;
+    padding: 0 2rem;
+}
+
+.seven h2 {
+    color: var(--yellowshade-2);
+}
+
+.seven p {
+    margin-top: 1rem;
+}
+
+.seven div {
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.questions {
+    background-color: var(--foot-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--white);
+}
+
+.answers {
+    background-color: var(--white);
+    color: navy;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--white);
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--foot-color);
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "foot social"
+        "link link"
+        "copys copys";
+}
+
+.footer {
+    grid-area: foot;
+}
+
+.social-icons {
+    grid-area: social;
+    place-self: end;
+    align-self: center;
+    gap: 0.5rem;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+.links {
+    grid-area: link;
+}
+
+.links ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.links ul li>a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.copy {
+    grid-area: copys;
+    text-align: center;
+    color: var(--grey-shade);
+    border-top: solid 1px black;
+}
+@media only screen and (min-width: 768px) {
+   
+    .buttons {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .card1{
+        position: absolute;
+        top: 15%;
+        right: 3%;
+    }
+    .two div {
+        margin-top: 2rem;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .card2{
+        grid-auto-columns: calc(100%/2);
+    }
+    .four div{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    }
+    .links ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .copy {
+        padding-top: 1.5rem;
+        font-size: 1rem;
+        font-weight: 400;
+        border-top: solid 1px black;
+    }
+    .seven{
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+    i {
+        transition: transform 400ms, color 200ms;
+    }
+
+    i:hover {
+        transform: scale(1.5);
+        color: navajowhite;
+    }
+}
+@media only screen and (min-width: 992px) {
+    header{
+        min-height: 15vh;
+    }
+    .one, .two, .three, .seven{
+        padding: 0 2rem;
+    }
+    .buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    
+    .card2{
+        grid-auto-columns: calc(100%/3);
+    }
+    .four div{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+     }
+    .five div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .five div div{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 0;
+    }
+    .five div div > .social-icons{
+        display: flex;
+        flex-direction: row;
+    }
+    .six{
+        flex-direction: row;
+        justify-content: space-around;
+       
+    }
+    footer {
+       
+        padding: 1rem 3rem;
+    }
+}
