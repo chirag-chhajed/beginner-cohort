@@ -154,6 +154,10 @@ h1 span {
     background-color: var(--foot-color);
     padding: 1rem;
     border-radius: 1rem;
+    transition: transform 400ms;
+}
+.two div div:hover{
+    transform: scale(1.1);
 }
 
 .two div>img {
@@ -251,6 +255,10 @@ h1 span {
     background-color: var(--foot-color);
     padding: 2.5rem;
     border-radius: 1rem;
+    transition: transform 400ms;
+}
+.four div div:hover{
+    transform: scale(1.1);
 }
 
 .five {
@@ -269,6 +277,12 @@ h1 span {
     object-fit: cover;
     object-position: top;
     border-radius: 1rem;
+}
+.five div div{
+    transition: transform 400ms;
+}
+.five div div:hover{
+    transform: scale(1.2);
 }
 
 .five div {
@@ -341,6 +355,10 @@ h1 span {
     padding: 1rem;
     border-radius: 1rem;
     border: 1px solid var(--white);
+    transition: transform 400ms;
+}
+.questions:hover{
+    transform: scale(1.1);
 }
 
 .answers {
@@ -349,6 +367,10 @@ h1 span {
     padding: 1rem;
     border-radius: 1rem;
     border: 1px solid var(--white);
+    transition: transform 400ms;
+}
+.answers:hover{
+    transform: scale(1.1);
 }
 
 footer {
