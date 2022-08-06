@@ -156,7 +156,8 @@ h1 span {
     border-radius: 1rem;
     transition: transform 400ms;
 }
-.two div div:hover{
+
+.two div div:hover {
     transform: scale(1.1);
 }
 
@@ -257,7 +258,8 @@ h1 span {
     border-radius: 1rem;
     transition: transform 400ms;
 }
-.four div div:hover{
+
+.four div div:hover {
     transform: scale(1.1);
 }
 
@@ -278,10 +280,12 @@ h1 span {
     object-position: top;
     border-radius: 1rem;
 }
-.five div div{
+
+.five div div {
     transition: transform 400ms;
 }
-.five div div:hover{
+
+.five div div:hover {
     transform: scale(1.2);
 }
 
@@ -357,7 +361,8 @@ h1 span {
     border: 1px solid var(--white);
     transition: transform 400ms;
 }
-.questions:hover{
+
+.questions:hover {
     transform: scale(1.1);
 }
 
@@ -369,7 +374,8 @@ h1 span {
     border: 1px solid var(--white);
     transition: transform 400ms;
 }
-.answers:hover{
+
+.answers:hover {
     transform: scale(1.1);
 }
 

@@ -132,6 +132,11 @@ header div>a {
     background-color: var(--foot-color);
     padding: 2rem;
     border-radius: 1rem;
+    transition: transform 400ms;
+}
+
+.two div div:hover {
+    transform: scale(1.1);
 }
 
 .two div>img {
@@ -175,8 +180,12 @@ header div>a {
     background-color: var(--foot-color);
     padding: 1.5rem;
     border-radius: 1rem;
+    transition: transform 400ms;
 }
 
+.three div div:hover {
+    transform: scale(1.1);
+}
 
 .three a {
     margin-top: 1rem;
@@ -200,6 +209,14 @@ header div>a {
     gap: 1rem;
     justify-content: center;
     align-items: center;
+}
+
+.four div div {
+    transition: transform 400ms;
+}
+
+.four div div:hover {
+    transform: scale(1.1);
 }
 
 .four div>img {
@@ -277,6 +294,11 @@ header div>a {
     padding: 1rem;
     border-radius: 1rem;
     border: 1px solid var(--white);
+    transition: transform 400ms;
+}
+
+.questions:hover {
+    transform: scale(1.1);
 }
 
 .answers {
@@ -285,6 +307,11 @@ header div>a {
     padding: 1rem;
     border-radius: 1rem;
     border: 1px solid var(--white);
+    transition: transform 400ms;
+}
+
+.answers:hover {
+    transform: scale(1.1);
 }
 
 footer {
