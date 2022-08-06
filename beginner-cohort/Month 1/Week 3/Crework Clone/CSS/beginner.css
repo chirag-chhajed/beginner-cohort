@@ -47,7 +47,8 @@ header {
 
 
 }
-.logo{
+
+.logo {
     place-self: start;
     align-self: end;
     font-size: 2.5rem;
@@ -88,7 +89,7 @@ header div>a {
     -moz-text-fill-color: transparent;
 }
 
-.one  p {
+.one p {
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--grey-shade);
@@ -183,6 +184,7 @@ header div>a {
     text-align: left;
     font-weight: 700;
 }
+
 .four {
     text-align: center;
     margin-top: 4rem;
@@ -192,6 +194,7 @@ header div>a {
     color: var(--yellowshade-1);
     margin-bottom: 2rem;
 }
+
 .four div {
     flex-direction: column;
     gap: 1rem;
@@ -206,6 +209,7 @@ header div>a {
     object-position: top;
     border-radius: 1rem;
 }
+
 .four div div>h2 {
     font-weight: 400;
     font-size: 1rem;
@@ -221,33 +225,39 @@ header div>a {
     text-decoration: none;
     color: var(--white);
 }
+
 .five {
     flex-direction: column;
     background: linear-gradient(90deg, #f3ec78, #af4261);
     margin-top: 4rem;
     padding: 2rem;
     gap: 1rem;
-    
+
 }
+
 .five h2 {
     font-size: 2.5rem;
     color: var(--white);
     text-align: left;
 }
-.five h4{
+
+.five h4 {
     color: black;
     font-size: 1.5rem;
 }
-.five > a{
+
+.five>a {
     color: black;
     background-color: var(--white);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
 }
+
 .six {
     margin-top: 3rem;
     padding: 0 1.5rem;
 }
+
 .six h2 {
     color: var(--yellowshade-2);
 }
@@ -261,6 +271,7 @@ header div>a {
     margin-top: 1rem;
     gap: 1rem;
 }
+
 .questions {
     background-color: var(--foot-color);
     padding: 1rem;
@@ -275,6 +286,7 @@ header div>a {
     border-radius: 1rem;
     border: 1px solid var(--white);
 }
+
 footer {
     margin-top: 2rem;
     padding: 1rem 2rem;
@@ -327,35 +339,44 @@ footer {
     color: var(--grey-shade);
     border-top: solid 1px black;
 }
-@media only screen and (min-width: 768px){
-    .one h1{
+
+@media only screen and (min-width: 768px) {
+    .one h1 {
         font-size: 6rem;
         font-weight: 900;
     }
-    .one p{
+
+    .one p {
         font-size: 3rem;
         font-weight: 700;
     }
+
     .one div>a {
         font-size: 1.5rem;
         padding: 1rem 2rem;
         border-radius: 2rem;
     }
-    .two,.three{
+
+    .two,
+    .three {
         margin-top: 2rem;
         padding: 1rem 2rem;
     }
-    .two div{
+
+    .two div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .three div{
+
+    .three div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .three >a {
+
+    .three>a {
         text-align: center;
     }
+
     .four div {
         flex-direction: row;
         flex-wrap: wrap;
@@ -363,22 +384,25 @@ footer {
         justify-content: space-evenly;
         align-items: center;
     }
-  
-    .six{
+
+    .six {
         display: grid;
         grid-template-columns: 20% 80%;
     }
+
     .links ul {
         flex-direction: row;
         justify-content: flex-start;
         gap: 1rem;
     }
+
     .copy {
         padding-top: 1.5rem;
         font-size: 1rem;
         font-weight: 400;
         border-top: solid 1px black;
     }
+
     i {
         transition: transform 400ms, color 200ms;
     }
@@ -388,26 +412,34 @@ footer {
         color: navajowhite;
     }
 }
+
 @media only screen and (min-width: 992px) {
-    .two h2{
+    .two h2 {
         text-align: left;
     }
-    .two,.three, .six{
+
+    .two,
+    .three,
+    .six {
         margin-top: 2rem;
         padding: 1rem 3rem;
     }
-    .two div{
+
+    .two div {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
-    .three div{
+
+    .three div {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
-    .two div div{
+
+    .two div div {
         padding: 3rem;
     }
-    .three div div{
+
+    .three div div {
         padding: 3rem;
     }
 }

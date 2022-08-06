@@ -104,7 +104,7 @@ h1 span {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-   
+
 }
 
 .card1 div>h3 {
@@ -403,31 +403,36 @@ footer {
     color: var(--grey-shade);
     border-top: solid 1px black;
 }
+
 @media only screen and (min-width: 768px) {
-   
+
     .buttons {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
 
-    .card1{
+    .card1 {
         position: absolute;
         top: 15%;
         right: 3%;
     }
+
     .two div {
         margin-top: 2rem;
         flex-direction: row;
         gap: 1rem;
     }
-    .card2{
+
+    .card2 {
         grid-auto-columns: calc(100%/2);
     }
-    .four div{
-       display: grid;
-       grid-template-columns: repeat(2, 1fr);
+
+    .four div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
+
     .links ul {
         flex-direction: row;
         justify-content: flex-start;
@@ -440,10 +445,12 @@ footer {
         font-weight: 400;
         border-top: solid 1px black;
     }
-    .seven{
+
+    .seven {
         display: grid;
         grid-template-columns: 20% 80%;
     }
+
     i {
         transition: transform 400ms, color 200ms;
     }
@@ -453,50 +460,63 @@ footer {
         color: navajowhite;
     }
 }
+
 @media only screen and (min-width: 992px) {
-    header{
+    header {
         min-height: 15vh;
     }
-    .one, .two, .three, .seven{
+
+    .one,
+    .two,
+    .three,
+    .seven {
         padding: 0 2rem;
     }
+
     .buttons {
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
     }
-    h1{
+
+    h1 {
         font-size: 4rem;
     }
-    
-    .card2{
+
+    .card2 {
         grid-auto-columns: calc(100%/3);
     }
-    .four div{
+
+    .four div {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-     }
-    .five div{
+    }
+
+    .five div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .five div div{
+
+    .five div div {
         display: flex;
         flex-direction: column;
         gap: 0.5em;
         padding: 0;
     }
-    .five div div > .social-icons{
+
+    .five div div>.social-icons {
         display: flex;
         flex-direction: row;
     }
-    .six{
+
+    .six {
         flex-direction: row;
         justify-content: space-around;
-       
+
     }
+
     footer {
-       
+
         padding: 1rem 3rem;
     }
 }
