@@ -281,6 +281,7 @@ h1 span {
 .five div div>h2 {
     font-weight: 400;
     font-size: 1rem;
+    margin-bottom: 0;
 }
 
 .five div div>h3 {
@@ -363,6 +364,8 @@ footer {
 
 .footer {
     grid-area: foot;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .social-icons {
