@@ -11,7 +11,7 @@ I feel fortunate to have been given the chance to be a part of this cohort becau
 ## Month 1
 ### [WEEK1](./beginner-cohort/Month%201/Week%201/)
 ### [WEEK2](./beginner-cohort/Month%201/Week%202/)
-
+### [WEEK3](./beginner-cohort/Month%201/Week%203/Crework%20Clone/)
 --- 
 
 Also if you want to explore other stuff made by me Check out this other repository: [Chirag's-Project](https://github.com/chirag-chhajed/Chirag-s-Project) 
