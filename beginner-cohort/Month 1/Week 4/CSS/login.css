@@ -1,0 +1,226 @@
+/* :root{
+
+} */
+body {
+    display: grid;
+    place-items: center;
+    align-items: start;
+    padding: 2.5rem 0rem;
+    margin: 0 2rem;
+    font-family: poppins, sans-serif;
+    background-color: #ffe5ec;
+
+}
+
+.login-form {
+    border: 0px solid black;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    background-color: #ff8fab;
+    box-shadow: 7.5px 7.5px;
+}
+
+header h1 {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 2.8rem;
+}
+
+header button {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-section {
+    /* outline: 1px black solid; */
+    margin: 1rem 0;
+    padding: 0.8rem 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    background-color: #c9184a;
+
+}
+
+input {
+    border: none;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    padding: 0.2rem 0.8rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    /* background-color: yellow; */
+    padding: 0.6rem;
+    border-radius: 1.2rem;
+    background-color: #720026;
+    color: white;
+    font-weight: 700;
+}
+
+#checkbox {
+    margin: 0;
+    padding: none;
+    width: 1.2rem;
+    aspect-ratio: 1;
+    margin-left: 1rem;
+    outline-style: none;
+}
+
+#cb {
+    text-align: center;
+}
+
+#remember-me-label {
+    padding: 0.5rem 6rem;
+    border-radius: 1.5rem;
+
+}
+
+#checkbox:focus {
+    outline-style: none;
+}
+
+#loginB {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    margin-top: 1rem;
+}
+
+#fp {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+}
+
+#fp a {
+    text-decoration: none;
+    color: black;
+}
+
+#😀 {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+}
+
+#signupB {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+
+}
+
+button {
+    box-shadow: 5px 5px;
+    transition: all ease-in 400ms;
+}
+
+button:hover {
+    box-shadow: none;
+    background-color: black;
+    color: white;
+
+}
+
+button a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+    transition: all ease-in 400ms;
+    text-emphasis: bold;
+}
+
+a {
+    font-weight: 700;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition: all 2.5s linear;
+}
+
+.hide-preloader {
+    z-index: -999;
+    visibility: hidden;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.buttons div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: all ease-in 1000ms;
+}
+
+.buttons div:nth-of-type(1) {
+    background-color: #720026;
+}
+
+.buttons div:nth-of-type(2) {
+    background-color: #47126b;
+}
+
+.buttons div:nth-of-type(3) {
+    background-color: #344e41;
+}
+
+.buttons div:nth-of-type(4) {
+    background-color: #003566;
+}
+
+.buttons div:nth-of-type(5) {
+    background-color: #c36f09;
+}
+
+@media screen and (min-width:992px) {
+    .login-form {
+        padding: 4rem 3rem;
+    }
+
+    header h1 {
+        padding-bottom: 1rem;
+    }
+}
