@@ -205,3 +205,15 @@ a {
         padding-bottom: 1rem;
     }
 }
+@media screen and (max-width:415px){
+    label{
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    #remember-me-label{
+        display: inline;
+    }
+    #checkbox{
+        margin-top: 1rem;
+    }
+}
