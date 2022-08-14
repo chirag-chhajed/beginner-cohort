@@ -7,5 +7,5 @@ Here are the images of the task.
 ## [Login Form](./HTML/login.html)
 ![Login Form](./Images/login%20form.png)
 
-##[Signup Form](./HTML/signup.html)
+## [Signup Form](./HTML/signup.html)
 ![Signup Form](./Images/sign%20up%20form.png)
