@@ -1,9 +1,13 @@
-function fizzbuzz(num){
+function FIZZBUZZ(num){
+    if (num%3===0 && num%5===0){
+        return "FIZZBUZZ"
+    }
     if (num%3===0){
         return "FIZZ"
-    } else if (num%5===0){
+    }
+    if (num%5===0){
         return "BUZZ"
-    } else if (num%3===0 && num%5===0){
-        return "FIZZBUZZ"
-    } 
+    }
 }
+
+FIZZBUZZ(15)
