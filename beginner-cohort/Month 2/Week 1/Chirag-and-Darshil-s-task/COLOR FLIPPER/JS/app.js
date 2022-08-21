@@ -28,6 +28,8 @@ btn.addEventListener("click", function () {
   document.body.style.transition = "all ease-in-out 400ms";
   button.style.backgroundColor = hexColor;
 });
+
+
 window.addEventListener("load", function () {
   preloader.classList.add("hide-preloader");
 });
