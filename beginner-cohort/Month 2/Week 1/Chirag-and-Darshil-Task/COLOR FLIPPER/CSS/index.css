@@ -1,0 +1,95 @@
+/* Header */
+header{
+    width: 100vw;
+    min-height: 15vh;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);;
+
+}
+header h1{
+    place-self: end;
+    align-self: center;
+    text-align: right;
+    font-family: Raleway, sans-serif;
+    text-shadow:
+                 0.1rem 0.1rem 0 gray;
+                 
+}
+header .logo{
+    place-self: start;
+    align-self: center;
+    color: salmon;
+    font-weight: 700;
+    font-family: Raleway, sans-serif;
+    font-size: 2rem;
+    text-shadow: 0.05rem 0.05rem 0 yellow,
+                 0.1rem 0.1rem 0 blue,
+                 0.150rem 0.150rem 0 red,
+                 0.2rem 0.2rem 0 black;
+}
+
+/* Main */
+main{
+    width: 100vw;
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+}
+.container{
+    text-align: center;
+    background-color: lavender;
+    max-width: 500px;
+    font-family: Raleway, sans-serif;
+    padding: 2rem 3rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);;
+}
+.container h2{
+    padding: 1rem;
+}
+.container button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.4rem;
+    transition: all ease-in-out 400ms;
+}
+.container button:hover{
+    box-shadow: 5px 5px;
+    transform: translate(-5px,-5px);
+}
+.progress-3 {
+    width:120px;
+    height:20px;
+    border-radius: 20px;
+    background:
+     repeating-linear-gradient(135deg,#f03355 0 10px,#ffa516 0 20px) 0/0%   no-repeat,
+     repeating-linear-gradient(135deg,#ddd    0 10px,#eee    0 20px) 0/100%;
+    animation:p3 2s infinite;
+  }
+  @keyframes p3 {
+      100% {background-size:100%}
+  }
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition: all linear 2.5s;
+  }
+.hide-preloader {
+    z-index: -999;
+    visibility: hidden;
+  }
+
