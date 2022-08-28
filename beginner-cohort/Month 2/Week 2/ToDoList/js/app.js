@@ -21,6 +21,7 @@ function addItem(e) {
   e.preventDefault();
   const listitem = document.createElement("li");
   const paragraph = document.createElement("p")
+  paragraph.classList.add("para")
   listitem.classList.add("list-item");
   paragraph.innerText = inputField.value;
   todoList.appendChild(listitem);
@@ -43,6 +44,9 @@ function addItem(e) {
   checkBtn.addEventListener("click", function () {
     listitem.style.textDecoration = "line-through";
   });
+  checkBtn.addEventListener("dblclick",function(){
+    listitem.style.textDecoration = "none";
+  })
   deleteBtn.addEventListener("click", function () {
     todoList.removeChild(listitem);
   });
