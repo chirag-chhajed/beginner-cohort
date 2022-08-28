@@ -9,11 +9,6 @@ const submitBtn = document.querySelector(".submit-btn");
 const todoList = document.querySelector(".list");
 const alert = document.querySelector(".alert");
 
-// Edit Option
-let editElement;
-let editFlag = false;
-let editID = "";
-
 // Event Listeners
 form.addEventListener("submit", addItem);
 
@@ -32,6 +27,10 @@ function addItem(e) {
   // Creating Elements
   const listitem = document.createElement("li");
   const paragraph = document.createElement("p");
+  // const id = new Date().getTime().toString();
+  // let attr = document.createAttribute("data-id")
+  // attr.value = id;
+  // listitem.setAttributeNode(attr)
   // Adding classes
   paragraph.classList.add("para");
   listitem.classList.add("list-item");
@@ -56,7 +55,10 @@ function addItem(e) {
   btnContainer.appendChild(deleteBtn);
   btnContainer.appendChild(checkBtn);
 
+  // Alerting display
   displayAlert("Task added","added")
+  // set local storage
+  // addToLocalStorage(id,value);
 
   // Event Listeners for Buttons
   checkBtn.addEventListener("click", function () {
@@ -70,5 +72,35 @@ function addItem(e) {
   deleteBtn.addEventListener("click", function () {
     todoList.removeChild(listitem);
     displayAlert("Task Deleted","delete")
+    // removeFromLocalStorage(id);
   });
 }
+setTimeout(function(){
+  localStorage.clear
+},3600000)
+
+// // Local storage
+// function addToLocalStorage(id, value) {
+//   const inputField = { id, value };
+//   let items = getLocalStorage();
+//   items.push(inputField);
+//   localStorage.setItem("todoList", JSON.stringify(items));
+// }
+
+// function getLocalStorage(){
+//   return localStorage.getItem("todoList")
+//   ? JSON.parse(localStorage.getItem("todoList"))
+//   : [];
+// }
+
+// function removeFromLocalStorage(id) {
+//   let items = getLocalStorage();
+
+//   items = items.filter(function (item) {
+//     if (item.id !== id) {
+//       return item;
+//     }
+//   });
+
+//   localStorage.setItem("todoList", JSON.stringify(items));
+// }
