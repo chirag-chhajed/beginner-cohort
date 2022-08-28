@@ -23,6 +23,10 @@ header{
 }
 .logo img{
     height: 5rem;
+    background-color: white;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 3px 0px black ;
     margin: 1rem 2rem;
 }
 /* Main */
@@ -41,13 +45,24 @@ main .todo .head{
     word-spacing: var(--spacing);
     background-color: var(--head-color);
     border-radius: 1rem 1rem 0 0;
-    box-shadow: 0.5rem 0.5rem black;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
 }
 main .todo .body{
     min-height: 40vh;
     background-color: var(--body-color);
     border-radius: 0 0 1rem 1rem;
-    box-shadow: 0.5rem 0.5rem black;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    
 }
 form{
     display: flex;
@@ -77,8 +92,33 @@ form button{
     transition: all ease-in-out 0.4s;
 }
 form button:hover{
-    color: lavender;
+    color: wheat;
     background-color: black;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-block: 0.5rem;
+}
+.list-item{
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    gap: 0.5rem;
+    font-family: var(--ff-two);
+    font-size: 1rem;
+    font-weight: 600;
+    word-break: break-all;
+}
+.list-item p{
+    justify-self: flex-start;
+}
+.list-item .btns{
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
 }
 
 
