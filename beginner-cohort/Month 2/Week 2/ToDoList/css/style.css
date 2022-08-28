@@ -9,8 +9,6 @@
     --ff-one: Poppins, sans-serif;
     --ff-two: Raleway, sans-serif;
     --ff-three: "Comic Sans MS", "Comic Sans", cursive;
-  
-
 }
 body{
     background-color: var(--bg-color);
@@ -24,7 +22,7 @@ header{
 .logo img{
     height: 5rem;
     background-color: white;
-    padding: 0.25rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 3px 0px black ;
     margin: 1rem 2rem;
@@ -38,7 +36,6 @@ main .todo .head{
     padding-block: 0.5rem;
     text-transform: capitalize;
     text-align: center;
-    /* text-shadow: ; */
     font-size: 1.5rem;
     font-family: var(--ff-one);
     font-weight: 700;
@@ -111,7 +108,7 @@ form button:hover{
     font-weight: 600;
     word-break: break-all;
 }
-
+/* Buttons */
 .btns{
     justify-self: flex-end;
     display: flex;
@@ -140,5 +137,31 @@ form button:hover{
     background-color: #ef233c;
     color: white;
 }
+/* Alert Message */
+.alert{
+    margin-top: 3rem;
+    font-family: var(--ff-two);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+}
+.alert-added{
+    background-color: #52b788;
+    color: white;
+}
+.alert-check{
+    background-color: #52b788;
+    color: white;
+}
+.alert-uncheck{
+    background-color: #ef233c;
+    color: white;
+}
+.alert-delete{
+    background-color: #ef233c;
+    color: white;
+}
+
 
 
