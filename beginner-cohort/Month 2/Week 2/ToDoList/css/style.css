@@ -103,6 +103,7 @@ form button:hover{
 }
 .list-item{
     display: flex;
+    margin-right: 1rem;
     text-align: left;
     flex-direction: row;
     justify-content: space-between;

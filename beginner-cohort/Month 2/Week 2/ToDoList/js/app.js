@@ -27,13 +27,14 @@ function addItem(e) {
   // Creating Elements
   const listitem = document.createElement("li");
   const paragraph = document.createElement("p");
-  // const id = new Date().getTime().toString();
-  // let attr = document.createAttribute("data-id")
-  // attr.value = id;
-  // listitem.setAttributeNode(attr)
+  const id = new Date().getTime().toString();
+  let attr = document.createAttribute("data-id")
+  attr.value = id;
+  listitem.setAttributeNode(attr)
   // Adding classes
   paragraph.classList.add("para");
   listitem.classList.add("list-item");
+  listitem.style.borderBottom = "1px solid black"
 
   paragraph.innerText = inputField.value;
   todoList.appendChild(listitem);
@@ -59,7 +60,7 @@ function addItem(e) {
   displayAlert("Task added","added")
   // set local storage
   // addToLocalStorage(id,value);
-
+  localStorage.setItem(id,inputField.value)
   // Event Listeners for Buttons
   checkBtn.addEventListener("click", function () {
     listitem.style.textDecoration = "line-through";
@@ -81,10 +82,8 @@ setTimeout(function(){
 
 // // Local storage
 // function addToLocalStorage(id, value) {
-//   const inputField = { id, value };
-//   let items = getLocalStorage();
-//   items.push(inputField);
-//   localStorage.setItem("todoList", JSON.stringify(items));
+  
+//   localStorage.setItem(id, inputField.value);
 // }
 
 // function getLocalStorage(){
