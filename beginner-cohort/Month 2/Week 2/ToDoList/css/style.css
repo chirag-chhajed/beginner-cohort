@@ -105,7 +105,7 @@ form button:hover{
     display: flex;
     text-align: left;
     flex-direction: row;
-    gap: 4rem;
+    justify-content: space-between;
     font-family: var(--ff-one);
     font-size: 1rem;
     font-weight: 600;
@@ -117,6 +117,7 @@ form button:hover{
     display: flex;
     flex-direction: row;
     gap: 0.25rem;
+    padding-right: 1rem;
 }
 .checkBtn{
     border: none;
