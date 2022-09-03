@@ -1,0 +1,253 @@
+/* :root{
+
+} */
+body {
+    display: grid;
+    place-items: start center;
+}
+
+/* Search bar */
+#search {
+    position: absolute;
+}
+
+/* pokedex */
+.pokedex {
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+    width: 50%;
+    margin-top: 7rem;
+}
+
+/* pokedex left */
+.pokedex .left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: lemonchiffon;
+}
+
+.pokedex .left .upper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    background-color: peachpuff;
+}
+
+/* pokedex left upper */
+.pokedex .left .upper .blue {
+    height: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px white solid;
+    background-color: navy;
+    margin: 1rem 2rem;
+}
+
+.pokedex .left .upper .btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.pokedex .left .upper .btn-container>div {
+    height: 1rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    align-self: start;
+    margin-top: 1rem;
+    border: 1px white solid;
+}
+
+.pokedex .left .upper .btn-container>div:nth-child(1) {
+    background-color: rgb(248, 84, 84);
+}
+
+.pokedex .left .upper .btn-container>div:nth-child(2) {
+    background-color: rgb(84, 95, 248);
+}
+
+.pokedex .left .upper .btn-container>div:nth-child(3) {
+    background-color: rgb(237, 248, 84);
+}
+
+/* pokedex left below */
+.pokedex .left .below {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+}
+
+.pokedex .left .below .below1 {
+    height: 100%;
+    width: 90%;
+    background-color: cornflowerblue;
+}
+
+.pokedex .left .below .below1 .frame {
+    width: 90%;
+    height: 50%;
+    background-color: white;
+    margin: 1.5rem 1rem;
+    display: grid;
+    place-items: center;
+}
+
+.frame .screen {
+    width: 90%;
+    height: 90%;
+    background-color: black;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.below-frame .rect-btns {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.below-frame .rect-btns>div {
+    width: 30%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10%;
+}
+
+.below-frame .circle-btn {
+    height: 2rem;
+    aspect-ratio: 1;
+    background-color: wheat;
+    border-radius: 50%;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.below-frame .plus-btn {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    position: relative;
+    margin-right: 1rem;
+}
+
+.plus-btn::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #000;
+    height: 20px;
+    margin-top: -10px;
+    top: 50%;
+    left: 5px;
+    right: 5px;
+    z-index: 9;
+}
+
+.plus-btn::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #000;
+    width: 20px;
+    margin-left: -10px;
+    left: 50%;
+    top: 5px;
+    bottom: 5px;
+    z-index: 9;
+}
+
+.name-container{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.name{
+    height: 100%;
+    width: 70%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+}
+
+.divider {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+.divider div:nth-child(2n) {
+    height: 20%;
+    width: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.divider div:nth-child(2n + 1) {
+    height: 40%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+/* pokedex right */
+
+.pokedex .right{
+    display: flex;
+    flex-direction: column;  
+    height: 100%;
+    width: 50%;
+    background-color: lemonchiffon;
+}
+.pokedex .right .upper{
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    
+}
+.screen-two{
+    width: 90%;
+    height: 20%;
+    background-color: black;
+    margin-top: 10%;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    border: 10px solid white;
+}
+.square-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.blue-squares-container {
+    width: 75%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.blue-squares-container > div {
+    border-radius: 2px;
+    border: black 1.5px solid;
+    background-color: navy;
+    box-shadow: inset -5px -5px #3298cb;
+}
