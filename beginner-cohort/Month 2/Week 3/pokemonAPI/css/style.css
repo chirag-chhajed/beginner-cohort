@@ -239,15 +239,56 @@ body {
   
 .blue-squares-container {
     width: 75%;
-    height: 80px;
+    height: 100px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 
 .blue-squares-container > div {
-    border-radius: 2px;
+    border-radius: 4px;
     border: black 1.5px solid;
     background-color: navy;
     box-shadow: inset -5px -5px #3298cb;
+}
+.right .rect-btns{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.right .rect-btns > div{
+    width: 30%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10%;
+}
+.white-squares-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .white-square {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: black 2px solid;
+    background-color: #ffffff;
+    box-shadow: inset -2px -2px gray;
+  }
+  .type-container{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+  }
+.type-container .type-text{
+    width: 50%;
+    height: 100%;
+    background-color: #000;
 }
