@@ -1,13 +1,15 @@
 const pokedex = document.querySelector(".pokedex");
 const searchBar = document.querySelector(".search");
 const inputField = document.getElementById("pokemon");
-const searchBtn = document.getElementById("search");
+const search = document.querySelector("#search");
 const screen = document.querySelector(".screen");
-const alert = document.getElementById("alert")
+const names = document.querySelector(".name");
+const screenTwo = document.querySelector(".screen-two")
 
-searchBar.addEventListener("submit", getPokemon);
+
+search.addEventListener("submit", getPokemon);
 function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
+  return string.toUpperCase();
 }
 
 function lowerCaseName(string) {
@@ -18,26 +20,26 @@ function getPokemon(e){
     
     const pokemonName = inputField.value;
 
-    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${lowerCaseName(pokemonName)}`)
     .then((response) => response.json())
     .then((data)=>{
-        screen.innerHTML = `
-        <div>
-          <img
-            src="${data.sprites.other["official-artwork"].front_default}"
-            alt="Pokemon name"
-          />
-        </div>
-        <div class="pokemonInfos">
-          <h1>${capitalizeFirstLetter(data.name)}</h3>
-          <p>Weight: ${data.weight}</p>
-          <p>Height: ${data.height}</p>
-        </div>`;
+       screen.style.backgroundImage = `url(${data.sprites.other["official-artwork"].front_default})`;
+        screen.style.backgroundSize = "contain"
+        screen.style.backgroundRepeat = "no-repeat"
+        screen.style.backgroundPosition = "center"
+        names.innerHTML = `<p>${capitalizeFirstLetter(pokemonName)}</p>`;
+        screenTwo.innerHTML = `<p>Weight: ${data.weight}</p><p>Height: ${data.height}</p>`
+
       })
       .catch((err) => {
-        alert.innerHTML = `
+        screen.innerHTML = `
         <h4>Pokemon not found 😞</h4>
         `;
       })
     e.preventDefault();
 }
+{/* <div class="pokemonInfos">
+          <h1>${capitalizeFirstLetter(data.name)}</h3>
+          <p>Weight: ${data.weight}</p>
+          <p>Height: ${data.height}</p>
+        </div> */}
