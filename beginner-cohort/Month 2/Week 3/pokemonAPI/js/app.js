@@ -1,4 +1,5 @@
 // Selecting elements
+
 const pokedex = document.querySelector(".pokedex");
 const searchBar = document.querySelector(".search");
 const inputField = document.getElementById("pokemon");
@@ -9,13 +10,19 @@ const screenTwo = document.querySelector(".screen-two");
 const type = document.querySelector(".type-container");
 const playButton = document.getElementById("play");
 const pauseButton = document.getElementById("pause");
-const blueButton = document.querySelector(".blue-squares-container")
+const playButtonTwo = document.getElementById("playtwo");
+const pauseButtonTwo = document.getElementById("pausetwo");
+const blueButton = document.querySelector(".blue-squares-container");
+
 // Audio
+
 const errorSound = document.getElementById("error");
 const successSound = document.getElementById("success");
-const themeSound = document.getElementById("theme")
-const hoverSound = document.getElementById("sound")
+const themeSound = document.getElementById("theme");
+const hoverSound = document.getElementById("sound");
+const englishTheme = document.getElementById("englishTheme");
 
+// Functions and Event Listeners
 
 search.addEventListener("submit", getPokemon);
 function capitalizeFirstLetter(string) {
@@ -55,6 +62,18 @@ function getPokemon(e) {
     });
   e.preventDefault();
 }
-play.addEventListener("click",() => {themeSound.play()});
-pause.addEventListener("click",() => {themeSound.pause()});
-blueButton.addEventListener("click",() => {hoverSound.play()});
+playButton.addEventListener("click", () => {
+  themeSound.play();
+});
+pauseButton.addEventListener("click", () => {
+  themeSound.pause();
+});
+blueButton.addEventListener("click", () => {
+  hoverSound.play();
+});
+playButtonTwo.addEventListener("click", () => {
+  englishTheme.play();
+});
+pauseButtonTwo.addEventListener("click", () => {
+  englishTheme.pause();
+});
