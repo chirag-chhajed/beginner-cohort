@@ -53,6 +53,7 @@ function getPokemon(e) {
       type.innerHTML = `<p>NONE</p>`;
       errorSound.play();
     });
+   inputField.value = "";
   e.preventDefault();
 }
 play.addEventListener("click",themeSound.play());
