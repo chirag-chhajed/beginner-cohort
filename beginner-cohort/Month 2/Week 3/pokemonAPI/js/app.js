@@ -57,4 +57,4 @@ function getPokemon(e) {
 }
 play.addEventListener("click",() => {themeSound.play()});
 pause.addEventListener("click",() => {themeSound.pause()});
-blueButton.addEventListener("mouseover",() => {hoverSound.play()});
+blueButton.addEventListener("click",() => {hoverSound.play()});
