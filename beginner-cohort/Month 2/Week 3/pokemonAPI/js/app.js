@@ -9,7 +9,7 @@ const screenTwo = document.querySelector(".screen-two");
 const type = document.querySelector(".type-container");
 const playButton = document.getElementById("play");
 const pauseButton = document.getElementById("pause");
-const blueButton = document.querySelector(".square-buttons-container")
+const blueButton = document.querySelector(".blue-squares-container")
 // Audio
 const errorSound = document.getElementById("error");
 const successSound = document.getElementById("success");
