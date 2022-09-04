@@ -55,6 +55,6 @@ function getPokemon(e) {
     });
   e.preventDefault();
 }
-play.addEventListener("click",themeSound.play());
-pause.addEventListener("click",themeSound.pause());
-blueButton.addEventListener("mouseover", hoverSound.play());
+play.addEventListener("click",() => {themeSound.play()});
+pause.addEventListener("click",() => {themeSound.pause()});
+blueButton.addEventListener("mouseover",() => {hoverSound.play()});
