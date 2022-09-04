@@ -5,6 +5,7 @@ const search = document.querySelector("#search");
 const screen = document.querySelector(".screen");
 const names = document.querySelector(".name");
 const screenTwo = document.querySelector(".screen-two")
+const type = document.querySelector(".type-container")
 
 
 search.addEventListener("submit", getPokemon);
@@ -28,7 +29,8 @@ function getPokemon(e){
         screen.style.backgroundRepeat = "no-repeat"
         screen.style.backgroundPosition = "center"
         names.innerHTML = `<p>${capitalizeFirstLetter(pokemonName)}</p>`;
-        screenTwo.innerHTML = `<p>Weight: ${data.weight}</p><p>Height: ${data.height}</p>`
+        screenTwo.innerHTML = `<p>Weight: ${data.weight}</p><p>Height: ${data.height}</p>`;
+        type.innerHTML = `<p>${capitalizeFirstLetter(data.types[0].type.name)}</p>`;
 
       })
       .catch((err) => {
