@@ -9,20 +9,18 @@ const screenTwo = document.querySelector(".screen-two");
 const type = document.querySelector(".type-container");
 const playButton = document.getElementById("play");
 const pauseButton = document.getElementById("pause");
-
+const blueButton = document.querySelector(".square-buttons-container")
 // Audio
-const successSound = new Audio(
-  "../assets/sound/Success sound effect (copyright free).mp3"
-);
-const errorSound = new Audio("../assets/sound/Error - Sound Effect (HD).mp3");
-const pokemonSong = new Audio("../assets/New folder/Theme.mp3");
+const errorSound = document.getElementById("error");
+const successSound = document.getElementById("success");
+const themeSound = document.getElementById("theme")
+const hoverSound = document.getElementById("sound")
+
+
 search.addEventListener("submit", getPokemon);
 function capitalizeFirstLetter(string) {
   return string.toUpperCase();
 }
-
-playButton.addEventListener("click",pokemonSong.play());
-pauseButton.addEventListener("click",pokemonSong.pause())
 
 function lowerCaseName(string) {
   return string.toLowerCase();
@@ -57,3 +55,6 @@ function getPokemon(e) {
     });
   e.preventDefault();
 }
+play.addEventListener("click",themeSound.play());
+pause.addEventListener("click",themeSound.pause());
+blueButton.addEventListener("mouseover", hoverSound.play());
