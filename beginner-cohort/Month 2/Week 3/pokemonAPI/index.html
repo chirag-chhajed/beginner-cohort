@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Families -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet"/>
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/favicon/pokeball-png-45334.png" type="image/x-icon">
     <!-- Font Awesome -->
@@ -13,15 +14,22 @@
     <!-- CSS stylesheets -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Pokemon</title>
+    <title>Pokedex</title>
 </head>
 
 <body>
+    <!-- logo -->
+    <div class="logo"><img src="./assets/International_Pokémon_logo.svg.png" alt="logo"></div>
+
+    <!-- Pokemon Search -->
     <form id="search">
-        <input type="text" name="name" id="pokemon">
+        <input type="text" name="name" id="pokemon" placeholder="e.g Blastoise">
         <button type="submit"><i class="fas fa-search"></i></button>
     </form>
+
+    <!-- Pokedex -->
     <div class="pokedex">
+        <!-- Pokedex Left -->
         <div class="left">
             <div class="upper">
                 <div class="blue"></div>
@@ -59,6 +67,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Pokedex Right -->
         <div class="right">
             <div class="upper"></div>
             <div class="screen-two"></div>

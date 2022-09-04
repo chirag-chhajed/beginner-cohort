@@ -2,17 +2,55 @@
 
 } */
 @font-face {
-    font-family: "pixel" ;
+    font-family: "pixel";
     src: url(../assets/press_start_2p/PressStart2P.ttf);
 }
+
 body {
     display: grid;
     place-items: start center;
+    background-color: #014f86;
+}
+/* logo */
+.logo{
+    position: absolute;
+    width: 10rem;
+    place-self: start;
+    top: 2.5%;
+    left: 2.5%;
+   
 }
 
 /* Search bar */
 #search {
     position: absolute;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    font-family: Poppins , sans-serif;
+}
+
+#search input{
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    border-radius: 1rem 0 0 1rem;
+    transition: all linear 0.3s;
+    outline: none;
+    border: none;
+}
+#search input:focus{
+    background-color: lavender;
+}
+#search button{
+    border: none;
+    outline: none;
+    border-radius:0 1rem 1rem 0;
+    padding: 0.5rem;
+    transition: all linear 0.4s;
+}
+#search button:hover{
+    background-color: black;
+    color: white;
 }
 
 /* pokedex */
@@ -22,6 +60,7 @@ body {
     height: 75%;
     width: 50%;
     margin-top: 7rem;
+    box-shadow: -10px 10px #660708;
 }
 
 /* pokedex left */
@@ -108,13 +147,6 @@ body {
     color: white;
 }
 
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    overflow: hidden;
-}
-
 .btns {
     width: 100%;
     display: flex;
@@ -133,21 +165,24 @@ img{
 
 .below-frame .rect-btns>div {
     width: 30%;
-    height: 0.5rem;
-    border: 1px solid  black;
+    height: 0.8rem;
+    border: 1px solid black;
     border-radius: 10%;
 }
 
-.below-frame .rect-btns>div:nth-child(1){
+.below-frame .rect-btns>div:nth-child(1) {
     background-color: red;
 }
-.below-frame .rect-btns>div:nth-child(2){
+
+.below-frame .rect-btns>div:nth-child(2) {
     background-color: cornflowerblue;
 }
+
 .below-frame .circle-btn {
     height: 2rem;
     aspect-ratio: 1;
-    background: radial-gradient(farthest-corner at 10px 10px, white, #ffba08, #ffba08);;
+    background: radial-gradient(farthest-corner at 10px 10px, white, #ffba08, #ffba08);
+    ;
     border-radius: 50%;
     margin-left: 1rem;
     margin-top: 0.5rem;
@@ -211,7 +246,7 @@ img{
     width: 7.5%;
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: #a4161a;
 }
 
 .divider div:nth-child(2n) {
@@ -219,12 +254,15 @@ img{
     width: 100%;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    box-shadow: inset 0px 0px 5px black;
 }
 
 .divider div:nth-child(2n + 1) {
     height: 40%;
     width: 100%;
     border: 1px solid black;
+    box-shadow: inset 0px 0px 5px black;
+    border-radius: 10%;
 }
 
 /* pokedex right */
@@ -240,14 +278,14 @@ img{
 .pokedex .right .upper {
     width: 100%;
     height: 20%;
-    background-color: white;
+    background-color: #014f86;
 
 }
 
 .screen-two {
     width: 90%;
     height: 20%;
-    background-color: black;
+    background-color: #007f5f;
     margin-top: 10%;
     margin-left: 1rem;
     margin-bottom: 2rem;
@@ -255,7 +293,7 @@ img{
     flex-direction: column;
     justify-content: space-evenly;
     font-family: 'pixel', sans-serif;
-    border: 10px solid white;
+    border: 5px solid black;
     color: white;
     padding-left: 1rem;
 }
@@ -276,7 +314,7 @@ img{
 
 .blue-squares-container>div {
     border-radius: 4px;
-    border: black 1.5px solid;
+    border: black 2px solid;
     background-color: navy;
     box-shadow: inset -3px -3px #3298cb;
 }
@@ -292,9 +330,17 @@ img{
 
 .right .rect-btns>div {
     width: 30%;
-    height: 0.5rem;
-    background-color: black;
+    height: 0.8rem;
+    border: 1px solid black;
     border-radius: 10%;
+}
+
+.right .rect-btns>div:nth-child(1) {
+    background-color: #80b918;
+}
+
+.right .rect-btns>div:nth-child(2) {
+    background-color: #ffff3f;
 }
 
 .white-squares-container {
@@ -319,9 +365,9 @@ img{
     height: 10%;
     display: flex;
     justify-content: center;
-    font-family: 'pixel',sans-serif;
+    font-family: 'pixel', sans-serif;
     color: white;
-    
+
 }
 
 .type-container .type-text {

@@ -34,9 +34,13 @@ function getPokemon(e){
 
       })
       .catch((err) => {
-        screen.innerHTML = `
-        <h4>Pokemon not found 😞</h4>
-        `;
+        screen.style.backgroundImage = `url(../assets/cross.png)`;
+        screen.style.backgroundSize = "contain"
+        screen.style.backgroundRepeat = "no-repeat"
+        screen.style.backgroundPosition = "center"
+        names.innerHTML = `<p>NOT A POKEMON</p>`;
+        screenTwo.innerHTML = `<p>😑😑😑</p>`;
+        type.innerHTML = `<p>NONE</p>`
       })
     e.preventDefault();
 }
