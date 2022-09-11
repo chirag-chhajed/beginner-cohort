@@ -17,7 +17,7 @@ body{
     color: white;
     word-spacing: 0.5rem;
     padding: 0rem 2rem 2rem 2rem;
-    animation: logo 1500ms ease-in 100ms calc(1) normal;
+    animation: logo 1500ms ease-in 100ms calc(2) alternate;
     animation-timing-function: ease;
     font-size: 1.5rem;
     text-shadow: 0px 3px #ffd20e,
@@ -42,11 +42,15 @@ body{
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #1d3557;
+    box-shadow: 0.5rem 0.5rem #457b9d;
+    border: 2px solid white;
 }
 .calculator .display-container{
     height: 30%;
     width: 100%;
-    background-color: cornsilk;
+    background-color: #a8dadc;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -55,16 +59,16 @@ body{
     margin-bottom: 1.5rem;
     text-align: right;
     border-radius: 0.5rem;
-    font-family: 'Technology',sans-serif;
+   
 }
 .calculator .display-container .previous-operand{
     width: 90%;
     height: 35%;
-    background-color: aqua;
+    background-color: #cad2c5;
     border: 3px solid black;  
     padding-inline: 1rem; 
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 .calculator .display-container .current-operand{
     width: 90%;
@@ -80,15 +84,20 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 0.5rem;
+    gap: 0.8rem;
     
 }
 .calculator .btn-container > button{
     border-radius: 1rem;
     font-size: 2rem;
+    /* box-shadow: 5px 5px white; */
+    transition: all 0.2s linear;
+    font-weight: 700;
 }
 .calculator .btn-container > button:hover{
-    background-color: rgba(255, 255, 255, .9);
+    background-color: #011627;
+    color: #fdfffc;
+    box-shadow: none;
 }
 @keyframes logo{
     0%{
