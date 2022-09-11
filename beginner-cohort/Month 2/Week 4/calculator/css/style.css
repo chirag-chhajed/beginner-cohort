@@ -17,7 +17,7 @@ body{
     color: white;
     word-spacing: 0.5rem;
     padding: 0rem 2rem 2rem 2rem;
-    animation: logo 2500ms ease-in-out 100ms calc(1) normal;
+    animation: logo 1500ms ease-in 100ms calc(1) normal;
     animation-timing-function: ease;
     font-size: 1.5rem;
     text-shadow: 0px 3px #ffd20e,
