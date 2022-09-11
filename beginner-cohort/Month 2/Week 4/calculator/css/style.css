@@ -1,16 +1,19 @@
-*{
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 @font-face {
     font-family: 'Technology';
     src: url(../assets/technology/Technology-Bold.ttf);
 }
-body{
+
+body {
     display: grid;
     place-items: center;
     background-color: rgb(27, 27, 27);
 }
-.logo{
+
+.logo {
     position: absolute;
     top: 3%;
     left: 2%;
@@ -35,7 +38,8 @@ body{
         -6px 39px #007db2,
         -6.5px 42px #00b8d9;
 }
-.calculator{
+
+.calculator {
     height: 75%;
     width: 25%;
     background-color: lavender;
@@ -47,7 +51,8 @@ body{
     box-shadow: 0.5rem 0.5rem #457b9d;
     border: 2px solid white;
 }
-.calculator .display-container{
+
+.calculator .display-container {
     height: 30%;
     width: 100%;
     background-color: #a8dadc;
@@ -59,18 +64,20 @@ body{
     margin-bottom: 1.5rem;
     text-align: right;
     border-radius: 0.5rem;
-   
+
 }
-.calculator .display-container .previous-operand{
+
+.calculator .display-container .previous-operand {
     width: 90%;
     height: 35%;
     background-color: #cad2c5;
-    border: 3px solid black;  
-    padding-inline: 1rem; 
+    border: 3px solid black;
+    padding-inline: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
 }
-.calculator .display-container .current-operand{
+
+.calculator .display-container .current-operand {
     width: 90%;
     height: 65%;
     background-color: cadetblue;
@@ -79,121 +86,136 @@ body{
     font-weight: 700;
     padding-inline: 1rem;
 }
-.calculator .btn-container{
+
+.calculator .btn-container {
     height: 70%;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0.8rem;
-    
+
 }
-.calculator .btn-container > button{
+
+.calculator .btn-container>button {
     border-radius: 1rem;
     font-size: 2rem;
     /* box-shadow: 5px 5px white; */
     transition: all 0.2s linear;
     font-weight: 700;
 }
-.calculator .btn-container > button:hover{
+
+.calculator .btn-container>button:hover {
     background-color: #011627;
     color: #fdfffc;
     box-shadow: none;
 }
-@keyframes logo{
-    0%{
+
+@keyframes logo {
+    0% {
         text-shadow: none;
     }
-    14.285%{
+
+    14.285% {
         text-shadow: 0px 3px #ffd20e,
-        -0.5px 6px #e5bc08,
-    }
-    28.56%{
-        text-shadow: 0px 3px #ffd20e,
-        -0.5px 6px #e5bc08,
-        -1px 9px #ec8401,
-        -1.5px 12px #e65c04,
-    }
-    42.84%{
-        text-shadow: 0px 3px #ffd20e,
-        -0.5px 6px #e5bc08,
-        -1px 9px #ec8401,
-        -1.5px 12px #e65c04,
-        -2px 15px #e52e06,
-        -2.5px 18px #de006b, 
-    }
-    57.12%{
-        text-shadow: 0px 3px #ffd20e,
-        -0.5px 6px #e5bc08,
-        -1px 9px #ec8401,
-        -1.5px 12px #e65c04,
-        -2px 15px #e52e06,
-        -2.5px 18px #de006b,
-        -3px 21px #ca039e,
-        -3.5px 24px #a203cb,
-    }
-    71.4%{
-        text-shadow: 0px 3px #ffd20e,
-        -0.5px 6px #e5bc08,
-        -1px 9px #ec8401,
-        -1.5px 12px #e65c04,
-        -2px 15px #e52e06,
-        -2.5px 18px #de006b,
-        -3px 21px #ca039e,
-        -3.5px 24px #a203cb,
-        -4px 27px #6d01c9,
-        -4.5px 30px #22008f,
-    }
-    85.68%{
-        text-shadow: 0px 3px #ffd20e,
-        -0.5px 6px #e5bc08,
-        -1px 9px #ec8401,
-        -1.5px 12px #e65c04,
-        -2px 15px #e52e06,
-        -2.5px 18px #de006b,
-        -3px 21px #ca039e,
-        -3.5px 24px #a203cb,
-        -4px 27px #6d01c9,
-        -4.5px 30px #22008f,
-        -5px 33px #062f9a,
-        -5.5px 36px #0045ac,
+            -0.5px 6px #e5bc08,
     }
 
-    100%{
+    28.56% {
         text-shadow: 0px 3px #ffd20e,
-        -0.5px 6px #e5bc08,
-        -1px 9px #ec8401,
-        -1.5px 12px #e65c04,
-        -2px 15px #e52e06,
-        -2.5px 18px #de006b,
-        -3px 21px #ca039e,
-        -3.5px 24px #a203cb,
-        -4px 27px #6d01c9,
-        -4.5px 30px #22008f,
-        -5px 33px #062f9a,
-        -5.5px 36px #0045ac,
-        -6px 39px #007db2,
-        -6.5px 42px #00b8d9;
+            -0.5px 6px #e5bc08,
+            -1px 9px #ec8401,
+            -1.5px 12px #e65c04,
+    }
+
+    42.84% {
+        text-shadow: 0px 3px #ffd20e,
+            -0.5px 6px #e5bc08,
+            -1px 9px #ec8401,
+            -1.5px 12px #e65c04,
+            -2px 15px #e52e06,
+            -2.5px 18px #de006b,
+    }
+
+    57.12% {
+        text-shadow: 0px 3px #ffd20e,
+            -0.5px 6px #e5bc08,
+            -1px 9px #ec8401,
+            -1.5px 12px #e65c04,
+            -2px 15px #e52e06,
+            -2.5px 18px #de006b,
+            -3px 21px #ca039e,
+            -3.5px 24px #a203cb,
+    }
+
+    71.4% {
+        text-shadow: 0px 3px #ffd20e,
+            -0.5px 6px #e5bc08,
+            -1px 9px #ec8401,
+            -1.5px 12px #e65c04,
+            -2px 15px #e52e06,
+            -2.5px 18px #de006b,
+            -3px 21px #ca039e,
+            -3.5px 24px #a203cb,
+            -4px 27px #6d01c9,
+            -4.5px 30px #22008f,
+    }
+
+    85.68% {
+        text-shadow: 0px 3px #ffd20e,
+            -0.5px 6px #e5bc08,
+            -1px 9px #ec8401,
+            -1.5px 12px #e65c04,
+            -2px 15px #e52e06,
+            -2.5px 18px #de006b,
+            -3px 21px #ca039e,
+            -3.5px 24px #a203cb,
+            -4px 27px #6d01c9,
+            -4.5px 30px #22008f,
+            -5px 33px #062f9a,
+            -5.5px 36px #0045ac,
+    }
+
+    100% {
+        text-shadow: 0px 3px #ffd20e,
+            -0.5px 6px #e5bc08,
+            -1px 9px #ec8401,
+            -1.5px 12px #e65c04,
+            -2px 15px #e52e06,
+            -2.5px 18px #de006b,
+            -3px 21px #ca039e,
+            -3.5px 24px #a203cb,
+            -4px 27px #6d01c9,
+            -4.5px 30px #22008f,
+            -5px 33px #062f9a,
+            -5.5px 36px #0045ac,
+            -6px 39px #007db2,
+            -6.5px 42px #00b8d9;
     }
 }
-@media screen and (max-width:500px)  {
-    .calculator{
+
+@media screen and (max-width:500px) {
+    .calculator {
         height: 100%;
         width: 100%;
     }
-    .logo{
+
+    .logo {
         display: none;
     }
 }
+
 @media screen and (min-width:501px) and (max-width:800px) {
-    .calculator{
+    .calculator {
         width: 60%;
     }
-    .logo{
+
+    .logo {
         display: none;
     }
 }
+
 @media screen and (min-width:801px) and (max-width:999px) {
-    .calculator{
+    .calculator {
         width: 40%;
     }
 }
