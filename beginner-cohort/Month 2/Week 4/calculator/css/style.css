@@ -55,8 +55,9 @@ body{
     margin-bottom: 1.5rem;
     text-align: right;
     border-radius: 0.5rem;
+    font-family: 'Technology',sans-serif;
 }
-.calculator .display-container .currentinput{
+.calculator .display-container .previous-operand{
     width: 90%;
     height: 35%;
     background-color: aqua;
@@ -65,7 +66,7 @@ body{
     font-size: 1rem;
     font-weight: 500;
 }
-.calculator .display-container .finalinput{
+.calculator .display-container .current-operand{
     width: 90%;
     height: 65%;
     background-color: cadetblue;
@@ -85,6 +86,9 @@ body{
 .calculator .btn-container > button{
     border-radius: 1rem;
     font-size: 2rem;
+}
+.calculator .btn-container > button:hover{
+    background-color: rgba(255, 255, 255, .9);
 }
 @keyframes logo{
     0%{
