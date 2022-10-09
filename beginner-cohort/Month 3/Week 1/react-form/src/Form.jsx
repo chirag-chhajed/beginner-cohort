@@ -7,6 +7,15 @@ export default function Form() {
     password: "",
     passwordConfirm: "",
   });
+  
+
+  const [theme,setTheme] = React.useState(0)
+  
+  const themeChange = () => {
+    setTheme(e => Math.floor(Math.random()*styles.length))
+  }
+
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((e) => {
@@ -16,15 +25,21 @@ export default function Form() {
       };
     });
   };
+
+  // Form Styles
+  const passwordIndex = formData.email.indexOf('@')
+  const passwordValidation = formData.email.slice(0,passwordIndex)
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.password === formData.passwordConfirm) {
+    if ((formData.password === passwordValidation)&&(formData.password === formData.passwordConfirm)) {
       console.log("Successfully signed up");
     } else {
       console.log("Passwords do not match");
       return;
     }
   };
+
+
   const styles = [
     {
       bodyColor: "#778da9",
@@ -82,30 +97,30 @@ export default function Form() {
       label: "#2a0800"
     }
   ]
-  function getRandomNumber(){
-    return Math.floor(Math.random()*styles.length)
-  }
-  const randomNumber = getRandomNumber()
-  let i = randomNumber
+  // function getRandomNumber(){
+  //   return Math.floor(Math.random()*styles.length)
+  // }
+  // const randomNumber = getRandomNumber()
+  // let i = randomNumber
   
  
   
-  document.body.style.backgroundColor = styles[i].bodyColor
+  document.body.style.backgroundColor = styles[theme].bodyColor
   const formColor = {
-    backgroundColor: styles[i].form
+    backgroundColor: styles[theme].form
   }
   let textColor = {
-    color: styles[i].text
+    color: styles[theme].text
   }
   let buttonColor = {
-    backgroundColor: styles[i].button.bgcolor,
-    color: styles[i].button.color
+    backgroundColor: styles[theme].button.bgcolor,
+    color: styles[theme].button.color
   }
   let formSectionColor = {
-    backgroundColor: styles[i].formSection
+    backgroundColor: styles[theme].formSection
   }
   let labelColor = {
-    backgroundColor: styles[i].label
+    backgroundColor: styles[theme].label
   }
   
   return (
@@ -165,7 +180,7 @@ export default function Form() {
         </div>
         <button style={buttonColor}>Sign Up</button>
       </form>
-      <button oncli className="theme">Theme Change</button>
+      <button onClick={themeChange} className="theme">Theme Change</button>
     </>
   );
 }
