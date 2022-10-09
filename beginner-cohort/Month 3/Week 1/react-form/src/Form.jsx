@@ -25,14 +25,99 @@ export default function Form() {
       return;
     }
   };
+  const styles = [
+    {
+      bodyColor: "#778da9",
+      form: "#415a77",
+      text: "#e0e1dd",
+      button: {
+        bgcolor: "#od1b2a",
+        color: "#e0e1dd"
+      },
+      formSection: "#8d99ae",
+      label: "#0d1b2a"
+    },
+    {
+      bodyColor: "#84a98c",
+      form: "#52796f",
+      text: "#cad2c5",
+      button: {
+        bgcolor: "#2f3e46",
+        color: "#cad2c5"
+      },
+      formSection: "#354f52",
+      label: "#2f3e46"
+    },
+    {
+      bodyColor: "#e0b1cb",
+      form: "#be95c4",
+      text: "#231942",
+      button: {
+        bgcolor: "#5e548e",
+        color: "#231942"
+      },
+      formSection: "#5e548e",
+      label: "#231942"
+    },
+    {
+      bodyColor: "#ffd60a",
+      form: "#ffc300",
+      text: "#231942",
+      button: {
+        bgcolor: "#003566",
+        color: "#001d3d"
+      },
+      formSection: "#00509d",
+      label: "#001d3d"
+    },
+    {
+      bodyColor: "#f4dbd8",
+      form: "#c09891",
+      text: "#2a0800",
+      button: {
+        bgcolor: "#775144",
+        color: "#2a0800"
+      },
+      formSection: "#775144",
+      label: "#2a0800"
+    }
+  ]
+  function getRandomNumber(){
+    return Math.floor(Math.random()*styles.length)
+  }
+  const randomNumber = getRandomNumber()
+  let i = randomNumber
+  
  
+  
+  document.body.style.backgroundColor = styles[i].bodyColor
+  const formColor = {
+    backgroundColor: styles[i].form
+  }
+  let textColor = {
+    color: styles[i].text
+  }
+  let buttonColor = {
+    backgroundColor: styles[i].button.bgcolor,
+    color: styles[i].button.color
+  }
+  let formSectionColor = {
+    backgroundColor: styles[i].formSection
+  }
+  let labelColor = {
+    backgroundColor: styles[i].label
+  }
+  
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <Google />
+      <form style={formColor} onSubmit={handleSubmit}>
+        <Google 
+          style={textColor} 
+          styleOne={buttonColor}
+          />
         {/* Name input */}
         <div style={formSectionColor} className="form--section">
-          <label htmlFor="name">Name</label>
+          <label style={labelColor} htmlFor="name">Name</label>
           <input
             type="text"
             placeholder="Name"
@@ -43,8 +128,8 @@ export default function Form() {
           ></input>
         </div>
         {/* Email input */}
-        <div className="form--section">
-          <label htmlFor="email">Email</label>
+        <div style={formSectionColor}  className="form--section">
+          <label style={labelColor} htmlFor="email">Email</label>
           <input
             type="text"
             placeholder="Enter you mail"
@@ -55,8 +140,8 @@ export default function Form() {
           ></input>
         </div>
         {/* Password Input */}
-        <div className="form--section">
-          <label htmlFor="password">Password</label>
+        <div style={formSectionColor} className="form--section">
+          <label style={labelColor} htmlFor="password">Password</label>
           <input
             type="password"
             placeholder="Type Your Password"
@@ -67,8 +152,8 @@ export default function Form() {
           ></input>
         </div>
         {/* Confirm Password Input */}
-        <div className="form--section">
-          <label htmlFor="passwordConfirm">Confirm Password</label>
+        <div style={formSectionColor} className="form--section">
+          <label style={labelColor} htmlFor="passwordConfirm">Confirm Password</label>
           <input
             type="password"
             placeholder="Confirm Password"
@@ -78,9 +163,9 @@ export default function Form() {
             required
           />
         </div>
-        <button>Sign Up</button>
+        <button style={buttonColor}>Sign Up</button>
       </form>
-      <button className="theme">Theme Change</button>
+      <button oncli className="theme">Theme Change</button>
     </>
   );
 }

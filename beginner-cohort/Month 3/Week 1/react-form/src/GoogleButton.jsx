@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Google(){
+export default function Google(props){
     return(
         <>
-        <h2>Sign Up</h2>
+        <h2 style={props.style}>Sign Up</h2>
         
-        <h3>Sign Up with Google</h3>
+        <h3 style={props.styleOne}>Sign Up with Google</h3>
       
         </>
     )

@@ -28,6 +28,7 @@ h3{
   border-radius: 15px;
   box-shadow: 3px 5px ;
   transition: all 0.4s;
+  border: none;
 }
 h3:hover{
   box-shadow: none;
@@ -45,9 +46,6 @@ h3:hover{
   margin-inline: 1rem;
   border-radius: 25px;
 }
-.form--section.red{
-  background-color: red;
-}
 .form--section > label{
   background-color: rgb(3, 119, 119);
   width: 100px;
@@ -56,9 +54,6 @@ h3:hover{
   color: white;
   font-weight: 600;
   text-align: center;
-}
-.form--section.red{
-  background-color: rgb(127, 0, 0);
 }
 .form--section > label::after{
   content: ":";
@@ -85,9 +80,8 @@ button{
   transition: all 0.4s;
   font-size: 1.2rem;
   font-weight: 700;
-}
-button.red{
-  background-color: maroon;
+  border: none;
+  outline: none;
 }
 button:hover{
   box-shadow: none;
