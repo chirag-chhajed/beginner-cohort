@@ -31,7 +31,7 @@ export default function Form() {
       form: "#415a77",
       text: "#e0e1dd",
       button: {
-        bgcolor: "#od1b2a",
+        bgcolor: "#0d1b2a",
         color: "#e0e1dd"
       },
       formSection: "#8d99ae",
