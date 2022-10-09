@@ -6,7 +6,7 @@ export default function Form() {
       name: "",
       email: "",
       password: "",
-      ConPassword: ""
+      passwordConfirm: ""
     }
   )
   const handleChange = (event) => {
@@ -19,8 +19,15 @@ export default function Form() {
     })
   }
   const handleSubmit = (e) => {
-   
+    e.preventDefault()
+        if(formData.password === formData.passwordConfirm) {
+            console.log("Successfully signed up")
+        } else {
+            console.log("Passwords do not match")
+            return
+        }
   }
+  
   return (
     <>
     
@@ -61,13 +68,13 @@ export default function Form() {
         </div>
         {/* Confirm Password Input */}
         <div className="form--section">
-          <label htmlFor="ConPassword">Confirm Password</label>
+          <label htmlFor="passwordConfirm">Confirm Password</label>
           <input 
             type="password"
             placeholder="Confirm Your Password"
             onChange={handleChange}
-            name="ConPassword"
-            value={formData.ConPassword} /></div>
+            name="passwordConfirm"
+            value={formData.passwordConfirm} /></div>
         <button>Sign Up</button>
       </form>
       
