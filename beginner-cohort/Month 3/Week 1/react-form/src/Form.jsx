@@ -1,38 +1,35 @@
-import React from "react"
+import React from "react";
 import Google from "./GoogleButton";
 export default function Form() {
-  const [formData, setFormData] = React.useState(
-    {
-      name: "",
-      email: "",
-      password: "",
-      passwordConfirm: ""
-    }
-  )
+  const [formData, setFormData] = React.useState({
+    name: "",
+    email: "",
+    password: "",
+    passwordConfirm: "",
+  });
   const handleChange = (event) => {
-    const{name,value} = event.target;
-    setFormData(e => {
-      return{
+    const { name, value } = event.target;
+    setFormData((e) => {
+      return {
         ...e,
-        [name]: value
-      }
-    })
-  }
+        [name]: value,
+      };
+    });
+  };
   const handleSubmit = (e) => {
-    e.preventDefault()
-        if(formData.password === formData.passwordConfirm) {
-            console.log("Successfully signed up")
-        } else {
-            console.log("Passwords do not match")
-            return
-        }
-  }
-  
+    e.preventDefault();
+    if (formData.password === formData.passwordConfirm) {
+      console.log("Successfully signed up");
+    } else {
+      console.log("Passwords do not match");
+      return;
+    }
+  };
+
   return (
     <>
-    
       <form onSubmit={handleSubmit}>
-      <Google />
+        <Google />
         {/* Name input */}
         <div className="form--section">
           <label htmlFor="name">Name:</label>
@@ -69,15 +66,17 @@ export default function Form() {
         {/* Confirm Password Input */}
         <div className="form--section">
           <label htmlFor="passwordConfirm">Confirm Password</label>
-          <input 
+          <input
             type="password"
             placeholder="Confirm Your Password"
             onChange={handleChange}
             name="passwordConfirm"
-            value={formData.passwordConfirm} /></div>
+            value={formData.passwordConfirm}
+          />
+        </div>
         <button>Sign Up</button>
       </form>
-      
+      <button className="theme">Theme Change</button>
     </>
   );
 }
