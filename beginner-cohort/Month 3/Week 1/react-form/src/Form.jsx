@@ -25,20 +25,21 @@ export default function Form() {
       return;
     }
   };
-
+ 
   return (
     <>
       <form onSubmit={handleSubmit}>
         <Google />
         {/* Name input */}
-        <div className="form--section">
-          <label htmlFor="name">Name:</label>
+        <div style={formSectionColor} className="form--section">
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             placeholder="Name"
             onChange={handleChange}
             name="name"
             value={formData.name}
+            required
           ></input>
         </div>
         {/* Email input */}
@@ -50,17 +51,19 @@ export default function Form() {
             onChange={handleChange}
             name="email"
             value={formData.email}
+            required
           ></input>
         </div>
         {/* Password Input */}
         <div className="form--section">
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             placeholder="Type Your Password"
             onChange={handleChange}
             name="password"
             value={formData.password}
+            required
           ></input>
         </div>
         {/* Confirm Password Input */}
@@ -68,10 +71,11 @@ export default function Form() {
           <label htmlFor="passwordConfirm">Confirm Password</label>
           <input
             type="password"
-            placeholder="Confirm Your Password"
+            placeholder="Confirm Password"
             onChange={handleChange}
             name="passwordConfirm"
             value={formData.passwordConfirm}
+            required
           />
         </div>
         <button>Sign Up</button>

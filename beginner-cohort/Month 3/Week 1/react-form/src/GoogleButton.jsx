@@ -5,7 +5,7 @@ export default function Google(){
         <>
         <h2>Sign Up</h2>
         
-        <h3>Log in with Google</h3>
+        <h3>Sign Up with Google</h3>
       
         </>
     )

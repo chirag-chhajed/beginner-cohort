@@ -6,6 +6,9 @@ body{
   background-color: orchid;
 }
 form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   background-color: lightgreen;
   height: 600px;
   width: 350px;
@@ -19,7 +22,7 @@ h2{
 h3{
   text-align: center;
   padding: 0.5rem;
-  width: 50%;
+  width: 60%;
   margin-inline: auto;
   background-color: wheat;
   border-radius: 15px;
@@ -31,7 +34,68 @@ h3:hover{
   background-color: black;
   color: white;
 }
+
+.form--section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.4rem;
+  background-color: aqua;
+  padding: 1rem 0.5rem;
+  margin-inline: 1rem;
+  border-radius: 25px;
+}
+.form--section.red{
+  background-color: red;
+}
+.form--section > label{
+  background-color: rgb(3, 119, 119);
+  width: 100px;
+  padding: 0.2rem;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+.form--section.red{
+  background-color: rgb(127, 0, 0);
+}
+.form--section > label::after{
+  content: ":";
+}
+.form--section > input{
+  border: none;
+  padding: 0.3rem;
+  width: 180px;
+  height: 25px;
+  border-radius: 15px;
+}
+.form--section > input:focus{
+  border: none;
+  outline: none;
+}
+button{
+  width: 50%;
+  padding: 0.5rem;
+  width: 60%;
+  margin-inline: auto;
+  background-color: wheat;
+  border-radius: 15px;
+  box-shadow: 3px 5px ;
+  transition: all 0.4s;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+button.red{
+  background-color: maroon;
+}
+button:hover{
+  box-shadow: none;
+  background-color: black;
+  color: white;
+}
 .theme {
+  margin-left: 7rem;
   --width: 150px;
   --timing: 2s;
   border: 0;
@@ -43,7 +107,7 @@ h3:hover{
   background: rgb(64, 192, 87);
   transition: all 0.2s;
   border-radius: 3px;
-  margin-inline: auto;
+  box-shadow: none;
 }
 
 .theme:hover {
