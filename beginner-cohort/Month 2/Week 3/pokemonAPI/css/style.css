@@ -61,7 +61,7 @@ body {
 .pokedex {
     display: flex;
     flex-direction: row;
-    height: 75%;
+    height: 500px;
     width: 50%;
     margin-top: 7rem;
     box-shadow: -10px 10px #660708;
