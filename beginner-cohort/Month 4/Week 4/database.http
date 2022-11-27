@@ -1,0 +1,17 @@
+@host =  http://localhost:5000
+GET {{host}} HTTP/1.1
+###
+GET {{host}}/database HTTP/1.1
+
+###
+POST {{host}}/database HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+
+{
+    "name":"Norwegian Wood",
+    "author": "Haruki Murakami"
+}
+
+
