@@ -53,7 +53,7 @@ const deleteTask = (req,res) => {
     const updatedTasks = data.filter(
         task => task.id !== Number(id)
     )
-    return res.status(200).json({success:true,data: updateTask})
+    res.status(200).json({success:true,data: updatedTasks})
 }
 
 
