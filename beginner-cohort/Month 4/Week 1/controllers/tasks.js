@@ -1,7 +1,7 @@
 let {data,randomNumber} = require('../data')
 
 const getAllTasks = (req,res) => {
-    res.send(200).json({success: true,data:{ ...data}})
+    res.send(200).json({success: true,data:data})
 }
 
 const createTask = (req,res) => {
