@@ -1,9 +1,9 @@
 import { Router } from "express";
-import {getAllStudents,createStudent,getStudent} from "../controllers/students.js"
+import {getAllStudentsData,createStudentData,getStudentData,updateStudentData,deleteStudentData} from "../controllers/students.js"
 // import studentData from "../data/studentData.js";
 // console.log(studentData)
 const router = Router()
-router.route('/').get(getAllStudents).post(createStudent)
-router.route('/:id').get(getStudent)
+router.route('/').get(getAllStudentsData).post(createStudentData)
+router.route('/:id').get(getStudentData).patch(updateStudentData).delete(deleteStudentData)
 
 export default router
