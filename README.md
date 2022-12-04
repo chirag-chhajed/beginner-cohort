@@ -32,4 +32,5 @@ I feel fortunate to have been given the chance to be a part of this cohort becau
 ### [WEEK2](https://github.com/chirag-chhajed/portfolio)
 ### [WEEK4](./beginner-cohort/Month%204/Week%204/)
 
-Also if you want to explore other stuff made by me Check out this other repository: [Chirag's-Project](https://github.com/chirag-chhajed/Chirag-s-Project) 
+## MONTH 5
+### [WEEK2](./beginner-cohort/Month%205/Week%201/)
