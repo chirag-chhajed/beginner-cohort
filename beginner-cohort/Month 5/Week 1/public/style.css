@@ -1,0 +1,15 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    text-indent: 1rem;
+    font-size: 2rem;
+    height: 15vh;
+    background-color: plum;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
