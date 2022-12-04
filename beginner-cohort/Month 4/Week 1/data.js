@@ -15,4 +15,4 @@ let data = [
 ]
 
 module.exports = {data,randomNumber}
-console.log(data)
+// console.log(data)
