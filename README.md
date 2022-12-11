@@ -30,7 +30,8 @@ I feel fortunate to have been given the chance to be a part of this cohort becau
 ## MONTH 4
 ### [WEEK1](https://github.com/chirag-chhajed/anime-app)
 ### [WEEK2](https://github.com/chirag-chhajed/portfolio)
-### [WEEK4](./beginner-cohort/Month%204/Week%204/)
+### [WEEK4](./beginner-cohort/Month%204/Week%201/)
 
 ## MONTH 5
-### [WEEK2](./beginner-cohort/Month%205/Week%201/)
+### [WEEK1](./beginner-cohort/Month%205/Week%201/)
+### [WEEK2](./beginner-cohort/Month%205/Week%202/)
