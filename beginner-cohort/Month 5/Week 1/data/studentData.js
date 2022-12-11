@@ -19,7 +19,7 @@ let studentData = [
     {
         id: nanoid(),
         firstName: "Sansa",
-        lastName: "Jones",  
+        lastName: "Evans",  
     },
 ]
 
