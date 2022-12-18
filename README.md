@@ -35,3 +35,4 @@ I feel fortunate to have been given the chance to be a part of this cohort becau
 ## MONTH 5
 ### [WEEK1](./beginner-cohort/Month%205/Week%201/)
 ### [WEEK2](./beginner-cohort/Month%205/Week%202/)
+### [WEEK3](./beginner-cohort/Month%205/Week%203/)
