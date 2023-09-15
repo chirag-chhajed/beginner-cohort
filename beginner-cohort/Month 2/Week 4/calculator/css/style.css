@@ -207,6 +207,7 @@ body {
 @media screen and (min-width:501px) and (max-width:800px) {
     .calculator {
         width: 60%;
+        height: 600px;
     }
 
     .logo {
@@ -216,6 +217,7 @@ body {
 
 @media screen and (min-width:801px) and (max-width:999px) {
     .calculator {
-        width: 40%;
+        height: 600px;
+        width: 400px;
     }
 }
